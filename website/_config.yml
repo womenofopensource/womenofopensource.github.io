@@ -18,21 +18,22 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
+title: Women of Open Source
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+  Women of Open Source is a support group and resource for and about women who
+  contribute to or maintain open source projects, or would like to.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://womenofopensource.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: womenofopensource
+domain: womenofopensource.github.io
 
 # Build settings
-theme: minima
+#remote-theme: pages-themes/minimal
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
