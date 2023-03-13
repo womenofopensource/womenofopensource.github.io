@@ -2,3 +2,5 @@
   url: "/"
 - text: "About"
   url: "/about/"
+- text: "Code of Conduct"
+  url: "/code-of-conduct/"
