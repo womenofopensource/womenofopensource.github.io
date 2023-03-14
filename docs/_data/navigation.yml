@@ -2,3 +2,5 @@
   url: "/"
 - text: "About"
   url: "/about/"
+- text: "Support us"
+  url: "/support/"
