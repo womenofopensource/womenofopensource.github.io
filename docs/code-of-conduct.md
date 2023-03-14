@@ -1,3 +1,9 @@
+---
+layout: default
+title: Code of Conduct
+permalink: /code-of-conduct/
+---
+
 # Women of Open Source Code of Conduct
 
 ## Our Principles
