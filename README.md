@@ -33,3 +33,6 @@ For full instructions for your platform, visit the [GitHub Pages](https://pages.
 
 If you have any questions or comments about the website, feel free to open an issue or connect with the main community.
 
+## 🙏 Support
+
+Don't forget to leave a star ⭐️
