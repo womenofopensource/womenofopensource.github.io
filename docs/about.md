@@ -1,7 +1,11 @@
 ---
-layout: default
-title: About
+title: About the Women of Open Source Community
+subtitle: Personal is the perfect theme for developers, designers and other creatives.
+description: Personal is the perfect theme for developers, designers and other creatives.
+featured_image: /images/demo/about.jpg
 permalink: /about/
 ---
 
-This group is inclusive, we want to encourage wider participation in open source, so please join us.
+## Features
+
+Women of Open Source is a support group and resource for and about women who contribute to or maintain open source projects, or would like to. 
