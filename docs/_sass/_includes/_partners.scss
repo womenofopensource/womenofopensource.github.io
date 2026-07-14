@@ -1,0 +1,127 @@
+// - - - - - - - - - - - - - - - - - -
+
+// Partners Grid
+
+// - - - - - - - - - - - - - - - - - -
+
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Partners Grid
+
+.partners-grid {
+	padding: 40px 0;
+	background: $background-alt-color;
+
+	@include mq(tabletp) {
+		padding: 60px 0;
+	}
+
+	@include mq(laptop) {
+		padding: 80px 0;
+	}
+}
+
+.partners-grid.partners-grid--continuous {
+	padding-top: 20px;
+	margin-top: -40px;
+
+	@include mq(tabletp) {
+		padding-top: 30px;
+		margin-top: -40px;
+	}
+
+	@include mq(laptop) {
+		padding-top: 40px;
+		margin-top: -40px;
+	}
+}
+
+.partners-grid__title {
+	margin-bottom: 30px;
+	text-align: center;
+	color: $text-dark-color;
+
+	@include mq(tabletp) {
+		margin-bottom: 40px;
+	}
+
+	@include mq(laptop) {
+		margin-bottom: 60px;
+	}
+}
+
+.partners-grid__items {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 30px;
+
+	@include mq(tabletp) {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 40px;
+	}
+
+	@include mq(laptop) {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 50px;
+	}
+}
+
+.partner-card {
+	background: $background-color;
+	@include box-shadow(0, 6px, 16px, rgba(0,0,0,0.05));
+	@include transition(all 0.4s cubic-bezier(0.2, 0.3, 0, 1));
+	overflow: hidden;
+
+	&:hover {
+		@include box-shadow(0, 8px, 24px, rgba(0,0,0,0.15));
+		@include translate(0, -4px);
+
+		.partner-card__image {
+			@include scale(1.1);
+		}
+
+		.partner-card__title {
+			color: $accent-color;
+		}
+	}
+
+	a {
+		display: block;
+		text-decoration: none;
+		color: inherit;
+	}
+}
+
+.partner-card__image {
+	position: relative;
+	height: 0;
+	padding-bottom: 75%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	@include transition(all 0.6s cubic-bezier(0.2, 0.3, 0, 1));
+}
+
+.partner-card__title {
+	padding: 20px 20px 0;
+	font-size: 20px;
+	font-weight: $h3-weight;
+	color: $text-dark-color;
+	@include transition(color 0.3s ease);
+
+	@include mq(tabletp) {
+		padding: 25px 25px 0;
+		font-size: 22px;
+	}
+}
+
+.partner-card__subtitle {
+	padding: 10px 20px 20px;
+	font-size: 14px;
+	color: $text-light-color;
+
+	@include mq(tabletp) {
+		padding: 10px 25px 25px;
+		font-size: 15px;
+	}
+}
