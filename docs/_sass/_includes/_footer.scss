@@ -22,6 +22,11 @@
 
 	@include mq(laptop) {
 		padding: 80px 0;
+		
+		.wrap {
+			position: relative;
+			min-height: 50px;
+		}
 	}
 }
 
@@ -52,6 +57,10 @@
 
 .footer__text {
 	color: $text-light-color;
+	
+	@include mq(laptop) {
+		max-width: 60%;
+	}
 }
 
 .footer__copyright {
