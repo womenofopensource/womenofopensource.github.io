@@ -143,5 +143,7 @@ $grid-spacing: {{ site.data.settings.post_settings.grid_spacing }}px;
 
 @import "_includes/_listing";
 @import "_includes/_hero";
+@import "_includes/_partners";
+@import "_includes/_speakers";
 
 
