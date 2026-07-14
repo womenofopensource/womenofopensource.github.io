@@ -7,7 +7,7 @@ featured_image: '/images/speakers/lorna-jane-mitchell.jpg'
 location: United Kingdom
 languages:
   - English
-employer: Aiven
+employer: TM Forum
 expertise:
   - APIs
   - Developer Relations
@@ -17,7 +17,6 @@ expertise:
   - Developer Education
   - Documentation
 profiles:
-  sessionize: https://sessionize.com/lornajane
   linkedin: https://linkedin.com/in/lornajane
   mastodon: https://indieweb.social/@lornajane
   bluesky: https://bsky.app/profile/lornajane.net
@@ -25,35 +24,24 @@ profiles:
   github: https://github.com/lornajane
   website: https://lornajane.net
 talks:
-  - title: "API Design for Humans: Creating Delightful Developer Experiences"
-    abstract: "Great APIs are more than just technically correct - they're designed with developers in mind. This talk explores practical API design principles, common pitfalls to avoid, and patterns that lead to APIs people actually enjoy using. Learn how to create intuitive, well-documented interfaces that make integration a pleasure."
+  - title: "API Standards for AI Agents"
+    abstract: "Had a GREAT chat with some leading lights in the API space, thanks to Nordic APIs! Video: https://youtu.be/gJNQPhvS2NI"
     delivered_at:
-      - API Days London 2025
-      - Nordic APIs Summit 2024
-      - PHP UK Conference 2024
-  - title: "Documentation Beyond Words: Making Your API Accessible"
-    abstract: "Discover techniques for creating API documentation that goes beyond basic reference material. From interactive examples to video tutorials, learn how to build comprehensive documentation resources that serve developers at every skill level and learning style."
+      - Nordic APIs Livecast, January 2026
+  - title: "What’s new in OpenAPI 3.2"
+    abstract: "It is always a joy to mix with the API community! This year we launched OpenAPI 3.2 at APIDays London; here are the slides from that talk – or you can refer to the [release notes](https://github.com/OAI/OpenAPI-Specification/releases/tag/3.2.0)."
     delivered_at:
-      - Write the Docs 2024
-      - API Conference Berlin 2025
-      - DevRelCon 2024
-  - title: "Testing APIs: Tools and Techniques for Confidence"
-    abstract: "Testing APIs effectively requires different approaches than testing traditional applications. This hands-on talk covers testing strategies, tools, and best practices for ensuring your API works as expected - from unit tests to contract testing and beyond."
+      - APIDays London, September 2025
+  - title: "OpenAPI for Web Developers"
+    abstract: "Back with the PHP Community for the first time in a while at PHPUK! This talk is about OpenAPI specifically for backend developers, and covers some common scenarios that might be familiar to you, along with some suggestions for what might help. https://youtu.be/_2-paQxpF7E?si=yQAei5IXHTn9QJTp"
     delivered_at:
-      - PHPCon Poland 2024
-      - API World 2025
-      - Test Automation Summit 2024
-  - title: "Open Source Contribution: From First PR to Maintainer"
-    abstract: "Contributing to open source can seem daunting, but it's one of the best ways to grow as a developer and give back to the community. This talk shares practical advice for making your first contributions, building relationships with maintainers, and potentially becoming a maintainer yourself."
-    delivered_at:
-      - FOSDEM 2025
-      - Open Source Summit 2024
+      - PHP UK Conference, February 2025
 ---
 
 Lorna Jane Mitchell is a highly respected API specialist, developer advocate, and technical author with decades of experience in the tech industry. She is passionate about APIs, developer experience, and helping developers learn and grow through excellent documentation and education.
 
-As a Developer Advocate at Aiven, Lorna works to bridge the gap between complex technical systems and the developers who use them. She's an accomplished conference speaker, having presented at hundreds of events worldwide on topics ranging from API design to developer relations.
+As a Developer Advocate at TM Forum, Lorna works to bridge the gap between complex technical systems and the developers who use them. She's an accomplished conference speaker, having presented at many events worldwide on topics ranging from API design to developer relations.
 
 Lorna is also a prolific author and blogger, regularly sharing insights on her website and contributing to technical publications. She's well known in the PHP community and has contributed to numerous open source projects over the years.
 
-Her approach to technical content is characterized by clarity, practicality, and a genuine desire to make complex topics accessible to developers at all levels. Whether through documentation, code examples, or hands-on workshops, Lorna's goal is always to empower developers to build better software.
+Her approach to technical content is characterised by clarity, practicality, and a genuine desire to make complex topics accessible to developers at all levels. Whether through documentation, code examples, or hands-on workshops, Lorna's goal is always to empower developers to build better software.
