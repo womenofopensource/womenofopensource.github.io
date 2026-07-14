@@ -13,6 +13,9 @@ collections:
   projects:
     output: true
     permalink: /partners/:slug
+  speakers:
+    output: true
+    permalink: /speakers/:slug
 
 defaults:
   -
@@ -38,6 +41,12 @@ defaults:
       type: "projects"
     values:
       layout: "project"
+  -
+    scope:
+      path: ""
+      type: "speakers"
+    values:
+      layout: "speaker"
 
 markdown: kramdown
 
