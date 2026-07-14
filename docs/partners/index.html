@@ -29,7 +29,7 @@ permalink: /partners/
 
 			<div class="single-post__content">
 				
-				<h2>Become a Partner</h2>
+				<h2 class="partners-section-title">Become a Partner</h2>
 				
 				<p>Join us in supporting women and underrepresented groups in open source! As a partner of the Women of Open Source community, you'll be helping to create a more inclusive and diverse technology ecosystem.</p>
 
@@ -60,7 +60,7 @@ permalink: /partners/
 
 		<div class="partners-grid__items">
 
-			{% for project in site.projects reversed %}
+			{% for project in site.partners reversed %}
 
 			<div class="partner-card">
 				<a href="{{ project.url | relative_url }}">

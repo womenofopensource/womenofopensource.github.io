@@ -10,7 +10,7 @@ collections:
   posts:
     output: true
     permalink: /news/:slug
-  projects:
+  partners:
     output: true
     permalink: /partners/:slug
   speakers:
@@ -37,10 +37,10 @@ defaults:
       layout: "post"
   -
     scope:
-      path: "partners"
-      type: "projects"
+      path: ""
+      type: "partners"
     values:
-      layout: "project"
+      layout: "partner"
   -
     scope:
       path: ""

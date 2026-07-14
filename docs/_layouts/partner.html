@@ -1,0 +1,91 @@
+---
+layout: default
+---
+
+<section class="hero hero--single hero--partner">
+
+	{% if page.hero_image %}
+	<div class="hero__image" style="background-image: url({{ page.hero_image | relative_url }})">
+		<div class="hero__overlay"></div>
+	</div>
+	{% else %}
+	<div class="hero__image" style="background-image: url({{ '/images/demo/blog.jpg' | relative_url }})">
+		<div class="hero__overlay"></div>
+	</div>
+	{% endif %}
+
+	<div class="wrap">
+
+		<div class="partner-hero-content">
+			<h1>{{ page.title }}</h1>
+			<p class="partner-hero-tagline">{{ page.subtitle }}</p>
+			
+			<div class="partner-hero-meta">
+				{% if page.location %}
+				<span class="partner-hero-meta__item">📍 {{ page.location }}</span>
+				{% endif %}
+				{% if page.partnership_since %}
+				<span class="partner-hero-meta__item">🤝 Partner since {{ page.partnership_since }}</span>
+				{% endif %}
+			</div>
+
+			<div class="partner-hero-links">
+				{% if page.website %}
+				<a href="{{ page.website }}" target="_blank" rel="noopener noreferrer" class="partner-hero-link" aria-label="Visit website">
+					<i class="fas fa-globe" aria-hidden="true"></i>
+					Website
+				</a>
+				{% endif %}
+				{% if page.careers %}
+				<a href="{{ page.careers }}" target="_blank" rel="noopener noreferrer" class="partner-hero-link" aria-label="View careers">
+					<i class="fas fa-briefcase" aria-hidden="true"></i>
+					Careers
+				</a>
+				{% endif %}
+			</div>
+		</div>
+
+	</div>
+
+</section>
+
+<section class="partner-profile">
+
+	<div class="wrap">
+
+		<div class="partner-profile-grid">
+
+			<div class="partner-sidebar">
+				
+				{% if page.logo %}
+				<div class="partner-logo-wrapper">
+					<img src="{{ page.logo | relative_url }}" alt="{{ page.title }} logo" class="partner-logo">
+				</div>
+				{% endif %}
+
+			</div>
+
+			<div class="partner-main-content">
+
+				{% if page.partnership_quote %}
+				<div class="partner-quote">
+					<blockquote>
+						<p>"{{ page.partnership_quote }}"</p>
+						{% if page.partnership_quote_author %}
+						<footer>— {{ page.partnership_quote_author }}</footer>
+						{% endif %}
+					</blockquote>
+				</div>
+				{% endif %}
+
+				<div class="partner-content">
+					{{ page.content }}
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</section>
