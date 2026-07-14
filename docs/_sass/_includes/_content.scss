@@ -25,6 +25,10 @@
 	}
 }
 
+.single.single--no-padding {
+	padding-bottom: 0;
+}
+
 .single-post {
 	position: relative;
 	margin-top: -40px;
@@ -45,6 +49,12 @@
 	@include mq(laptop) {
 		padding: 70px 80px;
 		@include box-shadow(0, 14px, 26px, rgba(0,0,0,0.05));
+	}
+
+	&.single-post--seamless {
+		background: transparent;
+		box-shadow: none;
+		margin-bottom: 0;
 	}
 
 	hr {

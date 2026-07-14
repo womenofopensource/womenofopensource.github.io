@@ -202,6 +202,20 @@ a {
 	&:hover {
 		color: $accent-color;
 	}
+
+	&:focus {
+		outline: 2px solid $accent-color;
+		outline-offset: 2px;
+	}
+
+	&:focus:not(:focus-visible) {
+		outline: none;
+	}
+
+	&:focus-visible {
+		outline: 2px solid $accent-color;
+		outline-offset: 2px;
+	}
 }
 
 .button {
@@ -225,6 +239,20 @@ a {
 		background: adjust-hue($accent-color,15%);
 		border-color: adjust-hue($accent-color,15%);
 		color: $background-color;
+	}
+
+	&:focus {
+		outline: 2px solid $text-dark-color;
+		outline-offset: 2px;
+	}
+
+	&:focus:not(:focus-visible) {
+		outline: none;
+	}
+
+	&:focus-visible {
+		outline: 2px solid $text-dark-color;
+		outline-offset: 2px;
 	}
 
 	svg {

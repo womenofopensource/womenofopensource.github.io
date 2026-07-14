@@ -51,4 +51,18 @@
 		background: $accent-color;
 		color: $background-color;
 	}
+
+	&:focus {
+		outline: 2px solid $accent-color;
+		outline-offset: 2px;
+	}
+
+	&:focus:not(:focus-visible) {
+		outline: none;
+	}
+
+	&:focus-visible {
+		outline: 2px solid $accent-color;
+		outline-offset: 2px;
+	}
 }

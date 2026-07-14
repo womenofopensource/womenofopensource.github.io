@@ -8,6 +8,24 @@
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Header
 
+.skip-to-main {
+	position: absolute;
+	left: -9999px;
+	z-index: 9999;
+	padding: 10px 20px;
+	background: $accent-color;
+	color: $background-color;
+	font-weight: $bold-weight;
+	text-decoration: none;
+
+	&:focus {
+		left: 20px;
+		top: 20px;
+		outline: 2px solid $text-dark-color;
+		outline-offset: 2px;
+	}
+}
+
 .header {
 	margin-top: 20px;
 
@@ -79,6 +97,10 @@
 	font-size: 15px;
 	line-height: 20px;
 	color: $text-dark-color;
+	background: none;
+	border: none;
+	padding: 8px;
+	margin: 0;
 
 	@include mq(tabletp) {
 		right: 0;
@@ -86,6 +108,11 @@
 	
 	@include mq(tabletl) {
 		display: none;
+	}
+
+	&:focus {
+		outline: 2px solid $accent-color;
+		outline-offset: 2px;
 	}
 }
 
