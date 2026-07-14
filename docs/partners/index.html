@@ -14,37 +14,67 @@ permalink: /partners/
 
 	<div class="wrap">
 
-		<h1>Partners</h1>
-		<p>Meet our wonderful partners!</p>
+		<h1>Our Partners</h1>
+		<p>Supporting diversity and inclusion in open source</p>
 
 	</div>
 
 </section>
 
-<section class="listing">
+<section class="single single--no-padding">
 
-    <div class="wrap">
+	<div class="wrap">
 
-		{% for project in site.projects reversed %}
+		<article class="single-post single-post--seamless">
 
-		<article class="post">
+			<div class="single-post__content">
+				
+				<h2>Become a Partner</h2>
+				
+				<p>Join us in supporting women and underrepresented groups in open source! As a partner of the Women of Open Source community, you'll be helping to create a more inclusive and diverse technology ecosystem.</p>
 
-			<div class="post__image-wrap">
-				<div class="post__image" style="background-image: url({{ project.featured_image | relative_url }})"></div>
-			</div>
+				<h3>Partnership Benefits</h3>
+				
+				<ul>
+					<li>Visibility and recognition within our growing community</li>
+					<li>Opportunities to connect with talented contributors and maintainers</li>
+					<li>Demonstrate your commitment to diversity and inclusion in tech</li>
+					<li>Support events, workshops, and initiatives that make a difference</li>
+				</ul>
 
-			<div class="post__content-wrap">
-				<div class="post__content">
-					<h2 class="post__title"><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
-					<p class="post__subtitle">{{ project.subtitle }}</p>
-					<p class="post__description">{{ project.description }}</p>
-				</div>
+				<p>Interested in becoming a partner? <a href="/contact/">Get in touch with us</a> to learn more about partnership opportunities.</p>
+
 			</div>
 
 		</article>
 
-		{% endfor %}
+	</div>
+
+</section>
+
+<section class="partners-grid partners-grid--continuous">
+
+	<div class="wrap">
+
+		<h2 class="partners-grid__title">Our Current Partners</h2>
+
+		<div class="partners-grid__items">
+
+			{% for project in site.projects reversed %}
+
+			<div class="partner-card">
+				<a href="{{ project.url | relative_url }}">
+					<div class="partner-card__image" style="background-image: url({{ project.featured_image | relative_url }})"></div>
+					<h3 class="partner-card__title">{{ project.title }}</h3>
+					<p class="partner-card__subtitle">{{ project.subtitle }}</p>
+				</a>
+			</div>
+
+			{% endfor %}
+
+		</div>
 
 	</div>
-    </section>
+
+</section>
     

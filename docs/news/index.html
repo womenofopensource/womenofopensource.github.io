@@ -37,6 +37,7 @@ permalink: /news/
 				<div class="post__content">
 					<h2 class="post__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
 					<p class="post__subtitle">{{ post.subtitle }}</p>
+					<p class="post__date">{{ post.date | date: '%B %d, %Y' }}</p>
 					<p class="post__description">{{ post.description }}</p>
 				</div>
 			</div>
