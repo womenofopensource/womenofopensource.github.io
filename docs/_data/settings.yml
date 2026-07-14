@@ -14,6 +14,8 @@ menu_settings:
       url: '/news/'
     - title: 'About'
       url: '/about/'
+    - title: 'Speakers'
+      url: '/speakers/'
     - title: 'Application'
       url: 'application'
     - title: 'Code of Conduct'
