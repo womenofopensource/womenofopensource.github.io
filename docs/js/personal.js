@@ -95,7 +95,8 @@
 			else if ( thisTarget.indexOf('http') >= 0 ) {
 
 				// Go to the external link
-				window.open(thisTarget, '_blank');
+				var newWindow = window.open(thisTarget, '_blank', 'noopener,noreferrer');
+				if (newWindow) newWindow.opener = null;
 
 			}
 
