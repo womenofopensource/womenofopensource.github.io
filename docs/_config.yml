@@ -1,7 +1,7 @@
 site: Women of Open Source Community
 
 url: https://womenofopensource.org
-baseurl: 
+baseurl: ""
 
 collections:
   pages:

@@ -43,10 +43,15 @@ permalink: /speakers/
 						id="expertise-search" 
 						class="speakers-filter__search" 
 						placeholder="Filter by expertise..."
-						readonly>
-					<span class="filter-dropdown-icon">▼</span>
+						readonly
+						role="combobox"
+						aria-expanded="false"
+						aria-haspopup="listbox"
+						aria-controls="expertise-dropdown"
+						aria-label="Filter speakers by expertise">
+					<span class="filter-dropdown-icon" aria-hidden="true">▼</span>
 				</div>
-				<div class="speakers-filter__dropdown" id="expertise-dropdown">
+				<div class="speakers-filter__dropdown" id="expertise-dropdown" role="listbox" aria-label="Expertise topics">
 					<input 
 						type="search" 
 						id="expertise-filter-search" 
@@ -55,7 +60,7 @@ permalink: /speakers/
 					<div class="speakers-filter__tags" id="expertise-tags">
 						{% assign all_expertise = site.speakers | map: 'expertise' | join: ',' | split: ',' | uniq | sort %}
 						{% for topic in all_expertise %}
-						<button type="button" class="filter-tag" data-filter="expertise" data-value="{{ topic | strip | downcase }}">
+						<button type="button" class="filter-tag" data-filter="expertise" data-value="{{ topic | strip | downcase }}" role="option" aria-selected="false">
 							{{ topic | strip }}
 						</button>
 						{% endfor %}
@@ -70,10 +75,15 @@ permalink: /speakers/
 						id="location-search" 
 						class="speakers-filter__search" 
 						placeholder="Filter by country..."
-						readonly>
-					<span class="filter-dropdown-icon">▼</span>
+						readonly
+						role="combobox"
+						aria-expanded="false"
+						aria-haspopup="listbox"
+						aria-controls="location-dropdown"
+						aria-label="Filter speakers by country">
+					<span class="filter-dropdown-icon" aria-hidden="true">▼</span>
 				</div>
-				<div class="speakers-filter__dropdown" id="location-dropdown">
+				<div class="speakers-filter__dropdown" id="location-dropdown" role="listbox" aria-label="Country list">
 					<input 
 						type="search" 
 						id="location-filter-search" 
@@ -82,7 +92,7 @@ permalink: /speakers/
 					<div class="speakers-filter__tags" id="location-tags">
 						{% assign all_locations = site.speakers | map: 'location' | uniq | sort %}
 						{% for location in all_locations %}
-						<button type="button" class="filter-tag" data-filter="location" data-value="{{ location | downcase }}">
+						<button type="button" class="filter-tag" data-filter="location" data-value="{{ location | downcase }}" role="option" aria-selected="false">
 							{{ location }}
 						</button>
 						{% endfor %}
@@ -90,7 +100,7 @@ permalink: /speakers/
 				</div>
 			</div>
 
-			<button id="reset-filters" class="speakers-reset">Clear Filters</button>
+			<button id="reset-filters" class="speakers-reset" type="button" aria-label="Clear all speaker filters">Clear Filters</button>
 
 		</div>
 
@@ -166,6 +176,7 @@ permalink: /speakers/
 	// Toggle dropdown visibility
 	function toggleDropdown(dropdown, filterGroup) {
 		const isActive = dropdown.classList.contains('active');
+		const comboboxInput = filterGroup.querySelector('[role="combobox"]');
 		
 		// Close all dropdowns first
 		document.querySelectorAll('.speakers-filter__dropdown').forEach(d => {
@@ -173,12 +184,15 @@ permalink: /speakers/
 		});
 		document.querySelectorAll('.speakers-filter-group').forEach(g => {
 			g.classList.remove('active');
+			const input = g.querySelector('[role="combobox"]');
+			if (input) input.setAttribute('aria-expanded', 'false');
 		});
 		
 		// Toggle the clicked one
 		if (!isActive) {
 			dropdown.classList.add('active');
 			filterGroup.classList.add('active');
+			if (comboboxInput) comboboxInput.setAttribute('aria-expanded', 'true');
 			// Focus the search input in the dropdown
 			const searchInput = dropdown.querySelector('.speakers-filter__dropdown-search');
 			if (searchInput) {
@@ -221,9 +235,11 @@ permalink: /speakers/
 			
 			if (this.classList.contains('active')) {
 				this.classList.remove('active');
+				this.setAttribute('aria-selected', 'false');
 				selectedFilters[filterType].delete(value);
 			} else {
 				this.classList.add('active');
+				this.setAttribute('aria-selected', 'true');
 				selectedFilters[filterType].add(value);
 			}
 			
@@ -260,6 +276,8 @@ permalink: /speakers/
 			});
 			document.querySelectorAll('.speakers-filter-group').forEach(g => {
 				g.classList.remove('active');
+				const input = g.querySelector('[role="combobox"]');
+				if (input) input.setAttribute('aria-expanded', 'false');
 			});
 		}
 	});
@@ -311,6 +329,7 @@ permalink: /speakers/
 		
 		document.querySelectorAll('.filter-tag').forEach(tag => {
 			tag.classList.remove('active');
+			tag.setAttribute('aria-selected', 'false');
 			tag.style.display = '';
 		});
 		

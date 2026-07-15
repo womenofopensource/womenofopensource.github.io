@@ -1,0 +1,4 @@
+Contact: https://womenofopensource.org/contact/
+Preferred-Languages: en
+Canonical: https://womenofopensource.org/.well-known/security.txt
+Policy: https://github.com/womenofopensource/womenofopensource.github.io/security/policy
