@@ -35,10 +35,11 @@ post_settings:
   grid_spacing: 10
 
 contact_settings:
-  form_action: ''
+  form_action: 'https://formspree.io/f/mzdndrpr'
   confirmation_url: '/thanks/'
   email_subject: 'Contact form submission'
   send_button_text: 'Send Message'
+  hcaptcha_sitekey: '9092ef02-422c-44a8-b288-09265664b1ee'
 
 social_settings:
   facebook_url: 'https://facebook.com/WomenOfOpensSource'

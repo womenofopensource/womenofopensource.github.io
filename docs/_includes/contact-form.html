@@ -21,9 +21,15 @@
 		<input type="hidden" name="_subject" value="{{ site.data.settings.contact_settings.email_subject }}" />
 		<input type="text" name="_gotcha" style="display: none;" class="contact-form__gotcha" value="">
 
-		<div class="contact-form__item">
-			<input type="submit" value="{{ site.data.settings.contact_settings.send_button_text }}" class="button button--large">
-		</div>
+	{% if site.data.settings.contact_settings.hcaptcha_sitekey %}
+	<div class="contact-form__item">
+		<div class="h-captcha" data-sitekey="{{ site.data.settings.contact_settings.hcaptcha_sitekey }}"></div>
+	</div>
+	{% endif %}
+
+	<div class="contact-form__item">
+		<input type="submit" value="{{ site.data.settings.contact_settings.send_button_text }}" class="button button--large">
+	</div>
 
 	</form>
 
