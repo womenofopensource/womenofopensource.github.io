@@ -45,7 +45,7 @@ There are many ways to participate in our community:
 - Apply to be listed in our speakers directory by making a PR to our repo (you'll need to be an active member of our community first)
 - Attend conferences and meetups where we're present
 - Contribute to our community resources and documentation
-- [Partner](/partners/) with us to support women in open source
+- [Partner]({{ '/partners/' | relative_url }}) with us to support women in open source
 
 ## Our values
 
@@ -61,4 +61,4 @@ There are many ways to participate in our community:
 
 ## Contact Us
 
-Ready to join our community or learn more? [Get in touch](/contact/) with us or follow our latest updates and opportunities. 
+Ready to join our community or learn more? [Get in touch]({{ '/contact/' | relative_url }}) with us or follow our latest updates and opportunities. 

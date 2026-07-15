@@ -12,7 +12,7 @@ Thank you for reaching out to the Women of Open Source community! We'll get back
 
 In the meantime, feel free to:
 
-- [Browse our speakers directory](/speakers/)
-- [Learn more about our community](/about/)
-- [Read our latest news](/news/)
-- [Learn about our partners](/partners/)
+- [Browse our speakers directory]({{ '/speakers/' | relative_url }})
+- [Learn more about our community]({{ '/about/' | relative_url }})
+- [Read our latest news]({{ '/news/' | relative_url }})
+- [Learn about our partners]({{ '/partners/' | relative_url }})
