@@ -1,8 +1,8 @@
 # robots.txt for Women of Open Source
-# https://www.womenofopensource.org/
+# https://womenofopensource.org/
 
 User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://www.womenofopensource.org/sitemap.xml
+Sitemap: https://womenofopensource.org/sitemap.xml
