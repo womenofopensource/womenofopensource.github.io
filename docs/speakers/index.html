@@ -259,6 +259,21 @@ permalink: /speakers/
 		toggleDropdown(locationDropdown, this.closest('.speakers-filter-group'));
 	});
 
+	// Keyboard support for opening dropdowns
+	expertiseInput.addEventListener('keydown', function(e) {
+		if (e.key === 'Enter' || e.key === ' ') {
+			e.preventDefault();
+			toggleDropdown(expertiseDropdown, this.closest('.speakers-filter-group'));
+		}
+	});
+
+	locationInput.addEventListener('keydown', function(e) {
+		if (e.key === 'Enter' || e.key === ' ') {
+			e.preventDefault();
+			toggleDropdown(locationDropdown, this.closest('.speakers-filter-group'));
+		}
+	});
+
 	// Filter tags in dropdowns
 	expertiseFilterSearch.addEventListener('input', function() {
 		filterTagVisibility(this, document.getElementById('expertise-tags'));
@@ -345,6 +360,8 @@ permalink: /speakers/
 		});
 		document.querySelectorAll('.speakers-filter-group').forEach(g => {
 			g.classList.remove('active');
+			const input = g.querySelector('[role="combobox"]');
+			if (input) input.setAttribute('aria-expanded', 'false');
 		});
 		
 		filterSpeakers();
