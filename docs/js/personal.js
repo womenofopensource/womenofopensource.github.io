@@ -347,19 +347,22 @@
 		// If already open
 		if ( $('body').hasClass('menu--open') ) {
 			$('body').removeClass('menu--open');
+			$('.js-menu-toggle').attr('aria-expanded', 'false');
 		}
 
 		// If not open
 		else {
 			$('body').addClass('menu--open');
+			$('.js-menu-toggle').attr('aria-expanded', 'true');
 		}
 	});
 
 	$(document).on('click', '.menu__list__item__link', function (){
 
 		// If menu is open when you click a link on mobile
-		if ( $('.menu').hasClass('menu--open') ) {
-			$('.menu').removeClass('menu--open');
+		if ( $('body').hasClass('menu--open') ) {
+			$('body').removeClass('menu--open');
+			$('.js-menu-toggle').attr('aria-expanded', 'false');
 		}
 	});
 

@@ -1,8 +1,9 @@
 ---
 title: Contact
-subtitle: Personal comes with a built-in contact form that's free and easy to set up.
-description: Personal is the perfect theme for developers, designers and other creatives.
+subtitle: Get in touch with the Women of Open Source community
+description: Connect with us to learn more about our community, speaking opportunities, partnerships, or to get involved.
 featured_image: /images/demo/contact.jpg
+permalink: /contact/
 ---
 
 {% include contact-form.html %}

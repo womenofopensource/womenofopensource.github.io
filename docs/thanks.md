@@ -1,10 +1,18 @@
 ---
-title: Thank you
+title: Thank you!
 subtitle: Your message was sent successfully.
-description: A sleek, modern Jekyll theme for personal websites.
+description: Thank you for contacting Women of Open Source.
 featured_image: /images/demo/contact.jpg
+permalink: /thanks/
 ---
 
-![](/images/demo/about.jpg)
+## We've received your message
 
-Please note, this contact form is for demo purposes only and is not monitored. Please contact us [via our website](https://jekyllthemes.io) if you need support.
+Thank you for reaching out to the Women of Open Source community! We'll get back to you as soon as possible.
+
+In the meantime, feel free to:
+
+- [Browse our speakers directory](/speakers/)
+- [Learn more about our community](/about/)
+- [Read our latest news](/news/)
+- [Learn about our partners](/partners/)
