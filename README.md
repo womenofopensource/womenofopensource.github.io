@@ -24,15 +24,15 @@ We welcome contributions! Whether you're fixing a typo, improving documentation,
 
 2. **Install Dependencies**
    
-   You'll need Ruby (version 2.7 or higher) and Bundler installed on your system.
+   You'll need Ruby (version 2.7 or higher) and Bundler 1.x installed on your system.
    
    - **macOS**: Ruby comes pre-installed, but you may want to use a version manager like [rbenv](https://github.com/rbenv/rbenv)
    - **Linux**: Install via your package manager (e.g., `sudo apt install ruby-full`)
    - **Windows**: Use [RubyInstaller](https://rubyinstaller.org/)
    
-   Install Bundler if you don't have it:
+   Install Bundler 1.17.2 (required by this project):
    ```bash
-   gem install bundler
+   gem install bundler -v 1.17.2
    ```
    
    Navigate to the docs folder and install project dependencies:
@@ -40,6 +40,8 @@ We welcome contributions! Whether you're fixing a typo, improving documentation,
    cd docs
    bundle install
    ```
+   
+   **Note on Ruby Versions:** This project currently uses pinned Jekyll versions for Ruby 2.6 compatibility. If you're using Ruby 2.7 or higher, you can switch to the `github-pages` gem in `docs/Gemfile` for better parity with GitHub Pages production environment (see comments in Gemfile for instructions).
 
 3. **Run Locally**
    
