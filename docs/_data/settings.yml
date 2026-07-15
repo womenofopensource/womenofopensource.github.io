@@ -36,7 +36,7 @@ post_settings:
 
 contact_settings:
   form_action: ''
-  confirmation_url: '/thanks'
+  confirmation_url: '/thanks/'
   email_subject: 'Contact form submission'
   send_button_text: 'Send Message'
 
