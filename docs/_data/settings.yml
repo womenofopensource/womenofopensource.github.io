@@ -42,7 +42,7 @@ contact_settings:
   hcaptcha_sitekey: '9092ef02-422c-44a8-b288-09265664b1ee'
 
 social_settings:
-  facebook_url: 'https://facebook.com/WomenOfOpensSource'
+  facebook_url: 'https://facebook.com/WomenOfOpenSource'
   twitter_url: 'https://twitter.com/WomenOfOS'
   instagram_url: 'https://instagram.com/WomenOfOpenSource'
   snapchat_url: ''
