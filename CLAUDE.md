@@ -68,13 +68,18 @@ Layouts are applied automatically per collection via `defaults` in `_config.yml`
 - **SEO/security:** CSP meta tag in `default.html`, `robots.txt` + generated `sitemap.xml`
   (URLs use `https://womenofopensource.org`, no `www`), `.well-known/security.txt`.
 
-## Outstanding / known TODOs (from prior work)
+## Outstanding / known TODOs
 
-- **Theme license** (`docs/_LICENSE.md`): awaiting theme creator's permission to host on GitHub.
-- **Formspree dashboard:** hCaptcha Account Secret still needs to be added.
-- **hCaptcha dashboard:** `local.womenofopensource.org` needs adding to allowed domains for local testing.
-- Local branch `new-theme` was behind `origin/new-theme` — pull before starting new work.
-- Uncommitted local state existed at import: `docs/CNAME` deleted, untracked `docs/Personal/`.
+- **Theme license** (`docs/_LICENSE.md`): awaiting theme creator's permission to host on GitHub. *(still open)*
+- **Formspree dashboard:** hCaptcha Account Secret — ✅ done (2026-08).
+- **hCaptcha dashboard:** allowed domains added — ✅ done (2026-08).
+- **Contact form:** backend fully configured; do a manual end-to-end test submission (an
+  automated one can't solve the hCaptcha challenge and would send a real email).
+- **Partner content:** `_partners/2024-07-15-partner-1.md` ("Tech Innovators Inc.") is an
+  intentional `published: false` template — replace with a real partner when one signs on,
+  then the unused `docs/images/demo/` folder can be removed.
+- **Hero images:** published pages currently share one interim photo (`photo-soocon.jpg`);
+  swap in page-specific images when available.
 
 ## Notes
 
