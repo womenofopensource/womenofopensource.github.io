@@ -2,7 +2,7 @@
 title: Thank you!
 subtitle: Your message was sent successfully.
 description: Thank you for contacting Women of Open Source.
-featured_image: /images/demo/contact.jpg
+featured_image: /images/home/photo-soocon.jpg
 permalink: /thanks/
 ---
 

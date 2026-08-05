@@ -2,7 +2,7 @@
 title: About the Women of Open Source Community
 subtitle: Empowering women to thrive in open source through community, mentorship, and advocacy
 description: Women of Open Source is a global community supporting women who contribute to open source projects through networking, resources, and opportunities.
-featured_image: /images/demo/about.jpg
+featured_image: /images/home/photo-soocon.jpg
 permalink: /about/
 ---
 

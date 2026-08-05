@@ -2,7 +2,7 @@
 title: Apply to join the Women of Open Source Community
 subtitle: Fill out the form to request an invitation.
 description: Apply to join the Women of Open Source Community
-featured_image: /images/demo/about.jpg
+featured_image: /images/home/photo-soocon.jpg
 permalink: /application/
 ---
 

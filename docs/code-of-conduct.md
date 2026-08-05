@@ -2,7 +2,7 @@
 title: Code of Conduct
 subtitle: This governs all interactions relating to the Women of Open Source Community.
 description: The Code of Conduct applies to all interactions relating to the Women of Open Source Community.
-featured_image: /images/demo/about.jpg
+featured_image: /images/home/photo-soocon.jpg
 permalink: /code-of-conduct/
 ---
 
