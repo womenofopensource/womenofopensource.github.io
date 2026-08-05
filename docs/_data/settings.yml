@@ -1,6 +1,8 @@
 basic_settings:
   site_title: Women of Open Source
   favicon_image: /images/favicon.png
+  # Fallback image for social sharing (og:image / twitter:image) when a page has no featured_image
+  default_social_image: /images/social.jpg
 
 header_settings:
   logo_image: /images/logo-colour.png
