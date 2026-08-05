@@ -19,7 +19,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 	<!-- Security -->
-	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://ajax.googleapis.com https://use.fontawesome.com https://www.google-analytics.com https://www.googletagmanager.com https://js.hcaptcha.com https://hcaptcha.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://hcaptcha.com; font-src 'self' https://use.fontawesome.com https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://hcaptcha.com; frame-src https://hcaptcha.com https://*.hcaptcha.com; base-uri 'self'; form-action 'self' https://formspree.io;">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://ajax.googleapis.com https://use.fontawesome.com https://www.google-analytics.com https://www.googletagmanager.com https://js.hcaptcha.com https://hcaptcha.com https://*.hcaptcha.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://hcaptcha.com https://*.hcaptcha.com; font-src 'self' https://use.fontawesome.com https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://hcaptcha.com https://*.hcaptcha.com; frame-src https://hcaptcha.com https://*.hcaptcha.com; base-uri 'self'; form-action 'self' https://formspree.io;">
 
 	<!-- Page Info -->
 	<link rel="shortcut icon" href="{{ site.data.settings.basic_settings.favicon_image | relative_url }}">
@@ -51,9 +51,9 @@
 	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
 	
-	<!-- hCaptcha -->
+	<!-- hCaptcha (explicit render – widgets are rendered by renderHCaptchas() in personal.js to support AJAX page loads) -->
 	{% if site.data.settings.contact_settings.hcaptcha_sitekey %}
-	<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+	<script src="https://js.hcaptcha.com/1/api.js?render=explicit&onload=renderHCaptchas" async defer></script>
 	{% endif %}
 
 	{% if site.data.settings.advanced_settings.custom_styles %}
@@ -102,7 +102,7 @@
 	<!-- Javascript Assets -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script src="{{ '/js/plugins-min.js' | relative_url }}"></script>
-	<script src="{{ '/js/personal.js' | relative_url }}"></script>
+	<script src="{{ '/js/personal-min.js' | relative_url }}"></script>
 
 	{% if site.data.settings.advanced_settings.footer_js %}
 	<!-- Extra Footer JS Code -->

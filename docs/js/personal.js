@@ -18,6 +18,34 @@
 	var docTitle = document.title;
 	var History = window.History;
 
+
+
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - hCaptcha
+
+	// Render hCaptcha widgets explicitly. The theme swaps page content via AJAX, so
+	// hCaptcha's automatic rendering (which scans the DOM only once) misses widgets
+	// loaded after the initial page. Exposed globally so the hCaptcha API's `onload`
+	// callback can call it too (see api.js include in default.html).
+	window.renderHCaptchas = function () {
+
+		if ( typeof window.hcaptcha === 'undefined' ) { return; }
+
+		$('.h-captcha').each( function () {
+
+			var $el = $(this);
+
+			// Skip widgets that are already rendered
+			if ( $el.data('rendered') || $el.find('iframe').length ) { return; }
+
+			try {
+				window.hcaptcha.render( this, { sitekey: $el.attr('data-sitekey') } );
+				$el.data('rendered', true);
+			} catch (e) {
+				// Already rendered or API not ready yet – ignore
+			}
+		});
+	};
+
 	// State change event
 	History.Adapter.bind(window,'statechange',function(){
 		var state = History.getState();
@@ -334,6 +362,13 @@
 		$('.single table').each(function () {
 			$(this).wrapAll('<div class="table-wrap"></div>');
 		});
+
+
+
+		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - hCaptcha
+
+		// Render any hCaptcha widgets present in the (possibly AJAX-loaded) content
+		window.renderHCaptchas();
 
 	}
 
