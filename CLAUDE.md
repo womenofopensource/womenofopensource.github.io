@@ -44,7 +44,9 @@ bundle exec jekyll serve --port 4000        # http://local.womenofopensource.org
 - `_partners/` — partner/sponsor profiles → `/partners/:slug`
 - `_sass/` — SCSS (mobile-first; use responsive mixins)
 - `speakers/index.html`, `news/index.html`, `partners/index.html` — directory/listing pages
-- `js/personal.js` — site JS (also minified as `personal-min.js`)
+- `js/personal.js` — site JS **source**. The site loads the minified `js/personal-min.js`
+  (like `plugins-min.js`), so after editing `personal.js` you MUST regenerate the minified file:
+  `cd docs && npx terser js/personal.js -c -m -o js/personal-min.js`
 - Top-level pages: `about.md`, `contact.md`, `application.md`, `thanks.md`, `code-of-conduct.md`, `404.html`
 
 Layouts are applied automatically per collection via `defaults` in `_config.yml`.
