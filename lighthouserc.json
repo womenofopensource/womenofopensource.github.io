@@ -1,0 +1,16 @@
+{
+  "ci": {
+    "collect": {
+      "staticDistDir": "docs/_site",
+      "numberOfRuns": 1
+    },
+    "assert": {
+      "assertions": {
+        "categories:accessibility": ["error", { "minScore": 0.9 }],
+        "categories:best-practices": ["warn", { "minScore": 0.9 }],
+        "categories:seo": ["warn", { "minScore": 0.9 }],
+        "categories:performance": "off"
+      }
+    }
+  }
+}

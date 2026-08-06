@@ -1,0 +1,13 @@
+{
+  "customSyntax": "postcss-scss",
+  "ignoreFiles": ["docs/_sass/_plugins.scss"],
+  "rules": {
+    "block-no-empty": true,
+    "declaration-block-no-duplicate-properties": [true, { "ignore": ["consecutive-duplicates-with-different-values"] }],
+    "declaration-block-no-shorthand-property-overrides": true,
+    "color-no-invalid-hex": true,
+    "font-family-no-duplicate-names": true,
+    "no-invalid-double-slash-comments": true,
+    "keyframe-block-no-duplicate-selectors": true
+  }
+}

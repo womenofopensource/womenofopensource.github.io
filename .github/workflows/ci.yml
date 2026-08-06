@@ -1,0 +1,100 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main, ci/github-actions]  # TEMP: ci/github-actions to validate the workflow; remove before merge
+
+# Cancel superseded runs on the same ref
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build + HTML proofer
+    runs-on: ubuntu-latest
+    env:
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+      # Point Bundler at docs/Gemfile from any working directory (absolute path)
+      BUNDLE_GEMFILE: ${{ github.workspace }}/docs/Gemfile
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3.4"
+          bundler-cache: true
+
+      - name: Build site
+        working-directory: docs
+        run: bundle exec jekyll build --strict_front_matter --trace
+
+      - name: Install html-proofer
+        run: gem install html-proofer -v '~> 5.0' --no-document
+
+      - name: Proof HTML (internal links, images, alt text)
+        run: htmlproofer docs/_site --disable-external --no-enforce-https --checks Links,Images
+
+      - name: Upload built site
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: docs/_site
+          retention-days: 1
+
+  lint:
+    name: Lint (JS, SCSS, Markdown, YAML)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - run: npm ci
+
+      - name: ESLint (personal.js)
+        run: npm run lint:js
+
+      - name: Stylelint (SCSS)
+        run: npm run lint:css
+
+      - name: markdownlint (content)
+        run: npm run lint:md
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: yamllint (config + data)
+        run: |
+          pip install --quiet yamllint
+          yamllint -c .yamllint.yml docs/_config.yml docs/_data/
+
+  lighthouse:
+    name: Lighthouse (accessibility)
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - run: npm ci
+
+      - name: Download built site
+        uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: docs/_site
+
+      - name: Run Lighthouse CI
+        run: npx lhci autorun
