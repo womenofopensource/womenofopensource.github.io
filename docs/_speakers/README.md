@@ -56,7 +56,7 @@ profiles:                                 # all optional — only those you add 
   website: https://ada.example
 talks:                                    # optional — one entry per talk
   - title: "Notes on the Analytical Engine"
-    abstract: "How a general-purpose machine could go beyond calculation. Slides: <https://example.com/slides>"
+    abstract: "How a general-purpose machine could go beyond calculation. [Read the slides](https://example.com/slides)."
     delivered_at:
       - Some Conference, 2026
 hero_image: '/images/speakers/ada-hero.jpg' # optional banner; falls back to a default photo
@@ -90,8 +90,11 @@ page — a few short paragraphs about who you are and what you speak about.
 - **Optional sections are hidden when empty** — e.g. no `languages` means no
   Languages box; no `talks` means no Speaking Topics section.
 - **Markdown works in your bio and in talk `abstract`s.** Add links with
-  `[text](https://…)`, or make a bare URL clickable by wrapping it in angle
-  brackets: `<https://…>`.
+  `[link text](https://…)` — descriptive link text (e.g. `[watch the talk](…)`)
+  reads better and is more accessible than a bare URL. For security, any raw HTML
+  in an abstract is escaped (shown as plain text, not rendered), and bare URLs /
+  `<https://…>` autolinks are **not** made clickable — always use the
+  `[link text](https://…)` form.
 - **`expertise` and `location` values are shared filters** across the directory,
   so reuse existing wording where it fits (e.g. "APIs", "United Kingdom") to keep
   the filter lists tidy.
