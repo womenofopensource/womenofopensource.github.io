@@ -1,13 +1,6 @@
 source 'https://rubygems.org'
 
-# NOTE: Using github-pages gem is recommended to match GitHub Pages production environment,
-# but it requires Ruby 2.7+. Current configuration uses pinned Jekyll for Ruby 2.6 compatibility.
-# To switch to github-pages gem (if using Ruby 2.7+), comment out the lines below and uncomment:
-# gem 'github-pages', group: :jekyll_plugins
-
-gem 'jekyll', '3.8.5'
-
-group :jekyll_plugins do
-  gem 'jekyll-paginate'
-  gem 'jekyll-sitemap'
-end
+# Use the github-pages gem so local builds match the GitHub Pages production
+# environment (Ruby 3.3.x, Jekyll 3.10.x, and the whitelisted plugins including
+# jekyll-paginate and jekyll-sitemap). See https://pages.github.com/versions/
+gem 'github-pages', group: :jekyll_plugins

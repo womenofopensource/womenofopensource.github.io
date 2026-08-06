@@ -13,16 +13,18 @@ Jekyll site hosted on GitHub Pages.
 
 ## Tech stack
 
-- Jekyll **3.8.5** (pinned in `docs/Gemfile` for Ruby 2.6 compatibility — NOT the `github-pages` gem)
-- Ruby **2.6.10**, Bundler **1.17.2** (Gemfile.lock requires 1.17.2 specifically)
-- Plugins: `jekyll-paginate`, `jekyll-sitemap`
-- Markdown: kramdown (GFM input), Rouge syntax highlighting
-- SCSS in `_sass/`, compiled compressed
-
-> Switching to Ruby 2.7+ would allow using the `github-pages` gem for closer
-> production parity — see the commented instructions in `docs/Gemfile`. Not done yet.
+- **`github-pages` gem** (in `docs/Gemfile`) — matches the GitHub Pages production build
+  exactly: Jekyll **3.10.0**, github-pages **232**, kramdown **2.4** (GFM input), Rouge.
+- Ruby **3.3.4** (pinned via `docs/.ruby-version`), Bundler **2.x**.
+- Plugins are provided by the github-pages gem: `jekyll-paginate`, `jekyll-sitemap`.
+- SCSS in `_sass/`, compiled compressed.
 
 ## Local development
+
+Prerequisites: **Ruby 3.3.4** (via a version manager such as rbenv; `docs/.ruby-version`
+pins it) and a **UTF-8 locale** (`export LANG=en_US.UTF-8`). Without UTF-8, local Sass
+builds fail on the github-pages default theme's non-ASCII characters; GitHub's build
+servers are UTF-8 already, so this only affects local builds.
 
 The site is served under a custom local domain (mapped in `/etc/hosts` →
 `127.0.0.1 local.womenofopensource.org`).
