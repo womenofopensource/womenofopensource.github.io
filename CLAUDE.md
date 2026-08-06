@@ -70,7 +70,14 @@ Layouts are applied automatically per collection via `defaults` in `_config.yml`
 
 ## Outstanding / known TODOs
 
-- **Theme license** (`docs/_LICENSE.md`): awaiting theme creator's permission to host on GitHub. *(still open)*
+- **Theme license** (`docs/_LICENSE.md`): ✅ closed — team decided use-not-redistribute is fine (2026-08). PR #9 merged to `main`, deployed to production.
+- **GitHub Pages build parity** *(follow-up, non-urgent):* the legacy Pages build warns
+  `github-pages gem can't satisfy your Gemfile's dependencies` because the Gemfile pins
+  `jekyll 3.8.5`. Production therefore ignores the Gemfile and builds with the `github-pages`
+  gem's Jekyll (≈3.10), so local ≠ prod. Site still builds/deploys fine. Resolve by either
+  switching the Gemfile to the `github-pages` gem (needs local Ruby 2.7+; currently 2.6.10),
+  or adding a custom GitHub Actions build workflow (which would also silence the Node-20
+  deprecation notice from GitHub's managed pipeline).
 - **Formspree dashboard:** hCaptcha Account Secret — ✅ done (2026-08).
 - **hCaptcha dashboard:** allowed domains added — ✅ done (2026-08).
 - **Contact form:** ✅ fully working — verified end-to-end (Formspree + hCaptcha + `/thanks/`
