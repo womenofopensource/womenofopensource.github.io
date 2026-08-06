@@ -485,11 +485,11 @@
 
 // Sidebar
 .speaker-sidebar {
-	order: 2;
-
-	@include mq(laptop) {
-		order: 1;
-	}
+	// Follows source order: on mobile the sidebar (photo, expertise, languages)
+	// comes first; on laptop the grid places it in the left column.
+	// min-width: 0 lets the grid column shrink below its content so a long
+	// unbreakable string (e.g. a URL) can't force horizontal overflow.
+	min-width: 0;
 }
 
 .speaker-image-wrapper {
@@ -548,11 +548,9 @@
 
 // Main Content
 .speaker-main-content {
-	order: 1;
-
-	@include mq(laptop) {
-		order: 2;
-	}
+	// On mobile follows the sidebar (source order); on laptop the grid places it
+	// in the right column. min-width: 0 allows the column to shrink (see sidebar).
+	min-width: 0;
 }
 
 .speaker-bio-section {
@@ -574,6 +572,7 @@
 	font-size: $p-medium;
 	line-height: 1.7;
 	color: $text-medium-color;
+	overflow-wrap: break-word;
 
 	p {
 		margin-bottom: 20px;
@@ -621,6 +620,27 @@
 	font-size: $p-medium;
 	line-height: 1.6;
 	color: $text-medium-color;
+
+	// markdownify wraps the abstract in <p>; reset margins and keep long
+	// words/URLs breaking within the card.
+	p {
+		margin: 0 0 15px;
+		overflow-wrap: break-word;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	a {
+		color: $accent-color;
+		text-decoration: underline;
+		overflow-wrap: break-word;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
 }
 
 .speaker-talk-history {
