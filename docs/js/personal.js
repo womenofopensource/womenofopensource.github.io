@@ -40,7 +40,7 @@
 			try {
 				window.hcaptcha.render( this, { sitekey: $el.attr('data-sitekey') } );
 				$el.data('rendered', true);
-			} catch (e) {
+			} catch (e) { // eslint-disable-line no-unused-vars -- binding kept for ES5-safe syntax
 				// Already rendered or API not ready yet – ignore
 			}
 		});
@@ -479,7 +479,7 @@
 					});
 
 					// When scrolling over the bottom
-					var waypoint1 = new Waypoint({
+					new Waypoint({
 						element: document.getElementById(thisId),
 						handler: function(direction) {
 
@@ -503,7 +503,7 @@
 					});
 
 					// When scrolling over the top
-					var waypoint2 = new Waypoint({
+					new Waypoint({
 						element: document.getElementById(thisId),
 						handler: function(direction) {
 
