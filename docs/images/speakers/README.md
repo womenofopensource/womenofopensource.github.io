@@ -12,12 +12,14 @@ This directory contains profile photos for speakers in the directory.
 ## Current Speakers
 
 The following speaker images are in use:
+
 - ruth-cheesley.jpg
 - lorna-jane-mitchell.jpg
 
 ## Adding New Speakers
 
 When adding a new speaker:
+
 1. Add their profile image to this directory
 2. Use the format: `firstname-lastname.jpg`
 3. Reference it in the speaker's markdown file: `featured_image: '/images/speakers/firstname-lastname.jpg'`
@@ -46,6 +48,7 @@ hero_image: '/images/speakers/speaker-name-hero.jpg'
 ```
 
 **Hero Image Requirements:**
+
 - **Format:** JPG or PNG
 - **Dimensions:** Wide landscape format (recommended: 1920x1080px or similar)
 - **File size:** Keep under 1MB for optimal performance

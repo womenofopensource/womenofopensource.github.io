@@ -61,4 +61,4 @@ There are many ways to participate in our community:
 
 ## Contact Us
 
-Ready to join our community or learn more? [Get in touch]({{ '/contact/' | relative_url }}) with us or follow our latest updates and opportunities. 
+Ready to join our community or learn more? [Get in touch]({{ '/contact/' | relative_url }}) with us or follow our latest updates and opportunities.
