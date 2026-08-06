@@ -25,7 +25,7 @@ menu_settings:
     - title: 'Contact'
       url: '/contact/'
     - title: 'Partners'
-      url: '/partners/' 
+      url: '/partners/'
 
 footer_settings:
   footer_tagline: Supporting both cis and trans women and non-binary and gender-nonconforming people who are interested in and/or contributing to Open Source.
