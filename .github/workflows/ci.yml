@@ -18,6 +18,8 @@ jobs:
     env:
       LANG: C.UTF-8
       LC_ALL: C.UTF-8
+      # Point Bundler at docs/Gemfile from any working directory (absolute path)
+      BUNDLE_GEMFILE: ${{ github.workspace }}/docs/Gemfile
     steps:
       - uses: actions/checkout@v4
 
@@ -25,7 +27,6 @@ jobs:
         with:
           ruby-version: "3.3.4"
           bundler-cache: true
-          working-directory: docs
 
       - name: Build site
         working-directory: docs
