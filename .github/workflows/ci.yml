@@ -32,7 +32,7 @@ jobs:
         run: bundle exec jekyll build --strict_front_matter --trace
 
       - name: Install html-proofer
-        run: gem install html-proofer --no-document
+        run: gem install html-proofer -v '~> 5.0' --no-document
 
       - name: Proof HTML (internal links, images, alt text)
         run: htmlproofer docs/_site --disable-external --no-enforce-https --checks Links,Images
