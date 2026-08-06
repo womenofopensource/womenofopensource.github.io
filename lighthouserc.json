@@ -2,6 +2,19 @@
   "ci": {
     "collect": {
       "staticDistDir": "docs/_site",
+      "url": [
+        "/index.html",
+        "/about/index.html",
+        "/speakers/index.html",
+        "/speakers/silavapi-cheesley.html",
+        "/contact/index.html",
+        "/thanks/index.html",
+        "/news/index.html",
+        "/partners/index.html",
+        "/application/index.html",
+        "/code-of-conduct/index.html",
+        "/404.html"
+      ],
       "numberOfRuns": 1
     },
     "assert": {
