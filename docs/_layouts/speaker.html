@@ -121,7 +121,7 @@ layout: default
 					{% for talk in page.talks %}
 					<div class="speaker-talk-card">
 						<h3>{{ talk.title }}</h3>
-						<div class="speaker-talk-abstract">{{ talk.abstract | markdownify }}</div>
+						<div class="speaker-talk-abstract">{{ talk.abstract | escape | markdownify }}</div>
 						{% if talk.delivered_at %}
 						<div class="speaker-talk-history">
 							<strong>Previously delivered at:</strong>

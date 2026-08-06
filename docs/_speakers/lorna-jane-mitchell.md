@@ -25,7 +25,7 @@ profiles:
   website: https://lornajane.net
 talks:
   - title: "API Standards for AI Agents"
-    abstract: "Had a GREAT chat with some leading lights in the API space, thanks to Nordic APIs! Video: <https://youtu.be/gJNQPhvS2NI>"
+    abstract: "Had a GREAT chat with some leading lights in the API space, thanks to Nordic APIs! Video: [https://youtu.be/gJNQPhvS2NI](https://youtu.be/gJNQPhvS2NI)"
     delivered_at:
       - Nordic APIs Livecast, January 2026
   - title: "What’s new in OpenAPI 3.2"
@@ -33,7 +33,7 @@ talks:
     delivered_at:
       - APIDays London, September 2025
   - title: "OpenAPI for Web Developers"
-    abstract: "Back with the PHP Community for the first time in a while at PHPUK! This talk is about OpenAPI specifically for backend developers, and covers some common scenarios that might be familiar to you, along with some suggestions for what might help. <https://youtu.be/_2-paQxpF7E?si=yQAei5IXHTn9QJTp>"
+    abstract: "Back with the PHP Community for the first time in a while at PHPUK! This talk is about OpenAPI specifically for backend developers, and covers some common scenarios that might be familiar to you, along with some suggestions for what might help. [https://youtu.be/_2-paQxpF7E?si=yQAei5IXHTn9QJTp](https://youtu.be/_2-paQxpF7E?si=yQAei5IXHTn9QJTp)"
     delivered_at:
       - PHP UK Conference, February 2025
 ---
