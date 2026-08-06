@@ -1,2 +1,6 @@
 # macOS
 .DS_Store
+
+# Node tooling (lint/CI)
+node_modules/
+.lighthouseci/

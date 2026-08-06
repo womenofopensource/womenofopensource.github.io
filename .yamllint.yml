@@ -1,0 +1,5 @@
+# Relaxed YAML linting for the Jekyll config and data files.
+extends: relaxed
+rules:
+  # Single-value settings (URLs, taglines) can't sensibly wrap.
+  line-length: disable

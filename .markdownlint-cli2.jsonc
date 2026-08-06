@@ -1,0 +1,15 @@
+{
+  // Rule config: keep meaningful checks, drop the noisy/opinionated ones.
+  "config": {
+    "default": true,
+    "MD013": false, // line length — prose wraps freely, doesn't affect rendering
+    "MD026": false  // trailing punctuation in headings — keep voice like "FOSDEM '24!"
+  },
+  // Lint our Markdown content only.
+  "globs": ["docs/**/*.md"],
+  "ignores": [
+    "docs/_site/**",     // build output
+    "docs/_README.md",   // vendored theme docs
+    "docs/_LICENSE.md"
+  ]
+}

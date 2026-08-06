@@ -1,0 +1,20 @@
+{
+  "name": "womenofopensource-tooling",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Lint tooling and CI configuration for the Women of Open Source website (the site itself lives in docs/).",
+  "scripts": {
+    "lint:js": "eslint docs/js/personal.js",
+    "lint:css": "stylelint \"docs/_sass/**/*.scss\"",
+    "lint:md": "markdownlint-cli2",
+    "lint": "npm run lint:js && npm run lint:css && npm run lint:md"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "@lhci/cli": "^0.14.0",
+    "eslint": "^9.15.0",
+    "markdownlint-cli2": "^0.15.0",
+    "postcss-scss": "^4.0.9",
+    "stylelint": "^16.10.0"
+  }
+}
