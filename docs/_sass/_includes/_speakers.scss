@@ -620,7 +620,27 @@
 	font-size: $p-medium;
 	line-height: 1.6;
 	color: $text-medium-color;
-	overflow-wrap: break-word;
+
+	// markdownify wraps the abstract in <p>; reset margins and keep long
+	// words/URLs breaking within the card.
+	p {
+		margin: 0 0 15px;
+		overflow-wrap: break-word;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	a {
+		color: $accent-color;
+		text-decoration: underline;
+		overflow-wrap: break-word;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
 }
 
 .speaker-talk-history {
