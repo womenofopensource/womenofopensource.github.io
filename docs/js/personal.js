@@ -40,7 +40,7 @@
 			try {
 				window.hcaptcha.render( this, { sitekey: $el.attr('data-sitekey') } );
 				$el.data('rendered', true);
-			} catch {
+			} catch (e) { // eslint-disable-line no-unused-vars -- binding kept for ES5-safe syntax
 				// Already rendered or API not ready yet – ignore
 			}
 		});
