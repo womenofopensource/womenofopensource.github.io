@@ -46,6 +46,234 @@
 		});
 	};
 
+
+
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Speakers directory
+
+	// Search + filter behaviour for the speakers directory. Lives here (not inline on the
+	// page) because the theme loads pages via AJAX and jQuery's .load() strips <script> tags
+	// from the fetched content, so page-level scripts never run on AJAX navigation. Called
+	// from pageFunctions() on every page load (initial and AJAX); guarded to no-op off the
+	// speakers page.
+	window.initSpeakersDirectory = function () {
+
+		var searchInput = document.getElementById('speaker-search');
+		if ( !searchInput ) { return; }
+
+		var expertiseInput = document.getElementById('expertise-search');
+		var expertiseDropdown = document.getElementById('expertise-dropdown');
+		var expertiseFilterSearch = document.getElementById('expertise-filter-search');
+		var locationInput = document.getElementById('location-search');
+		var locationDropdown = document.getElementById('location-dropdown');
+		var locationFilterSearch = document.getElementById('location-filter-search');
+		var resetButton = document.getElementById('reset-filters');
+		var speakerCards = document.querySelectorAll('.speaker-card');
+		var speakerCount = document.getElementById('speaker-count');
+		var noResults = document.getElementById('no-results');
+
+		var selectedFilters = {
+			expertise: new Set(),
+			location: new Set()
+		};
+
+		function toggleDropdown(dropdown, filterGroup) {
+			var isActive = dropdown.classList.contains('active');
+			var comboboxInput = filterGroup.querySelector('[role="combobox"]');
+
+			// Close all dropdowns first
+			document.querySelectorAll('.speakers-filter__dropdown').forEach(function (d) {
+				d.classList.remove('active');
+			});
+			document.querySelectorAll('.speakers-filter-group').forEach(function (g) {
+				g.classList.remove('active');
+				var input = g.querySelector('[role="combobox"]');
+				if (input) input.setAttribute('aria-expanded', 'false');
+			});
+
+			// Toggle the clicked one
+			if (!isActive) {
+				dropdown.classList.add('active');
+				filterGroup.classList.add('active');
+				if (comboboxInput) comboboxInput.setAttribute('aria-expanded', 'true');
+				var ddSearch = dropdown.querySelector('.speakers-filter__dropdown-search');
+				if (ddSearch) {
+					setTimeout(function () { ddSearch.focus(); }, 100);
+				}
+			}
+		}
+
+		function updateFilterPlaceholder(filterType) {
+			var count = selectedFilters[filterType].size;
+			var input = filterType === 'expertise' ? expertiseInput : locationInput;
+			var defaultText = filterType === 'expertise' ? 'Filter by expertise...' : 'Filter by country...';
+
+			if (count > 0) {
+				input.value = count + ' selected';
+			} else {
+				input.value = '';
+				input.placeholder = defaultText;
+			}
+		}
+
+		function filterTagVisibility(searchField, tagsContainer) {
+			var searchTerm = searchField.value.toLowerCase();
+			var tags = tagsContainer.querySelectorAll('.filter-tag');
+
+			tags.forEach(function (tag) {
+				var text = tag.textContent.toLowerCase();
+				tag.style.display = text.includes(searchTerm) ? '' : 'none';
+			});
+		}
+
+		// Toggle tag selection
+		document.querySelectorAll('.filter-tag').forEach(function (tag) {
+			tag.addEventListener('click', function (e) {
+				e.stopPropagation();
+				var filterType = this.dataset.filter;
+				var value = this.dataset.value;
+
+				if (this.classList.contains('active')) {
+					this.classList.remove('active');
+					this.setAttribute('aria-selected', 'false');
+					selectedFilters[filterType].delete(value);
+				} else {
+					this.classList.add('active');
+					this.setAttribute('aria-selected', 'true');
+					selectedFilters[filterType].add(value);
+				}
+
+				updateFilterPlaceholder(filterType);
+				filterSpeakers();
+			});
+		});
+
+		// Open dropdowns on click
+		expertiseInput.addEventListener('click', function (e) {
+			e.stopPropagation();
+			toggleDropdown(expertiseDropdown, this.closest('.speakers-filter-group'));
+		});
+
+		locationInput.addEventListener('click', function (e) {
+			e.stopPropagation();
+			toggleDropdown(locationDropdown, this.closest('.speakers-filter-group'));
+		});
+
+		// Keyboard support for opening dropdowns
+		expertiseInput.addEventListener('keydown', function (e) {
+			if (e.key === 'Enter' || e.key === ' ') {
+				e.preventDefault();
+				toggleDropdown(expertiseDropdown, this.closest('.speakers-filter-group'));
+			}
+		});
+
+		locationInput.addEventListener('keydown', function (e) {
+			if (e.key === 'Enter' || e.key === ' ') {
+				e.preventDefault();
+				toggleDropdown(locationDropdown, this.closest('.speakers-filter-group'));
+			}
+		});
+
+		// Filter tags in dropdowns
+		expertiseFilterSearch.addEventListener('input', function () {
+			filterTagVisibility(this, document.getElementById('expertise-tags'));
+		});
+
+		locationFilterSearch.addEventListener('input', function () {
+			filterTagVisibility(this, document.getElementById('location-tags'));
+		});
+
+		// Close dropdowns when clicking outside. Bound on document (which persists across
+		// AJAX navigations), so bind it only once.
+		if (!window.__speakersOutsideClickBound) {
+			window.__speakersOutsideClickBound = true;
+			document.addEventListener('click', function (e) {
+				if (!e.target.closest('.speakers-filter-group')) {
+					document.querySelectorAll('.speakers-filter__dropdown').forEach(function (d) {
+						d.classList.remove('active');
+					});
+					document.querySelectorAll('.speakers-filter-group').forEach(function (g) {
+						g.classList.remove('active');
+						var input = g.querySelector('[role="combobox"]');
+						if (input) input.setAttribute('aria-expanded', 'false');
+					});
+				}
+			});
+		}
+
+		// Prevent dropdown from closing when clicking inside
+		document.querySelectorAll('.speakers-filter__dropdown').forEach(function (dropdown) {
+			dropdown.addEventListener('click', function (e) {
+				e.stopPropagation();
+			});
+		});
+
+		function filterSpeakers() {
+			var searchTerm = searchInput.value.toLowerCase();
+			var visibleCount = 0;
+
+			speakerCards.forEach(function (card) {
+				var name = card.dataset.name;
+				var location = card.dataset.location;
+				var employer = card.dataset.employer;
+				var expertise = card.dataset.expertise;
+
+				var matchesSearch = !searchTerm ||
+					name.includes(searchTerm) ||
+					location.includes(searchTerm) ||
+					employer.includes(searchTerm) ||
+					expertise.includes(searchTerm);
+
+				var matchesExpertise = selectedFilters.expertise.size === 0 ||
+					Array.from(selectedFilters.expertise).some(function (value) { return expertise.includes(value); });
+				var matchesLocation = selectedFilters.location.size === 0 ||
+					Array.from(selectedFilters.location).some(function (value) { return location.includes(value); });
+
+				if (matchesSearch && matchesExpertise && matchesLocation) {
+					card.style.display = '';
+					visibleCount++;
+				} else {
+					card.style.display = 'none';
+				}
+			});
+
+			speakerCount.textContent = visibleCount;
+			noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+		}
+
+		function resetFilters() {
+			searchInput.value = '';
+			expertiseFilterSearch.value = '';
+			locationFilterSearch.value = '';
+
+			document.querySelectorAll('.filter-tag').forEach(function (tag) {
+				tag.classList.remove('active');
+				tag.setAttribute('aria-selected', 'false');
+				tag.style.display = '';
+			});
+
+			selectedFilters.expertise.clear();
+			selectedFilters.location.clear();
+
+			updateFilterPlaceholder('expertise');
+			updateFilterPlaceholder('location');
+
+			// Close all dropdowns
+			document.querySelectorAll('.speakers-filter__dropdown').forEach(function (d) {
+				d.classList.remove('active');
+			});
+			document.querySelectorAll('.speakers-filter-group').forEach(function (g) {
+				g.classList.remove('active');
+				var input = g.querySelector('[role="combobox"]');
+				if (input) input.setAttribute('aria-expanded', 'false');
+			});
+
+			filterSpeakers();
+		}
+
+		searchInput.addEventListener('input', filterSpeakers);
+		resetButton.addEventListener('click', resetFilters);
+	};
+
 	// State change event
 	History.Adapter.bind(window,'statechange',function(){
 		var state = History.getState();
@@ -369,6 +597,13 @@
 
 		// Render any hCaptcha widgets present in the (possibly AJAX-loaded) content
 		window.renderHCaptchas();
+
+
+
+		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Speakers directory
+
+		// Wire up the speakers search/filters (no-op when not on the speakers page)
+		window.initSpeakersDirectory();
 
 	}
 
