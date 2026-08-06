@@ -25,14 +25,15 @@ We welcome contributions! Whether you're fixing a typo, improving documentation,
 2. **Install Dependencies**
    
    You'll need **Ruby 3.3.4** installed. A version manager is strongly recommended — the
-   repo pins the version via `docs/.ruby-version`, so with [rbenv](https://github.com/rbenv/rbenv)
-   it's picked up automatically.
+   repo pins the version via `docs/.ruby-version`, so [rbenv](https://github.com/rbenv/rbenv)
+   picks it up automatically once you're in the `docs/` folder (where the build commands run).
    
    - **macOS**: `brew install rbenv ruby-build`, then `rbenv install 3.3.4`
    - **Linux**: install `rbenv` + `ruby-build` (or your package manager), then `rbenv install 3.3.4`
    - **Windows**: Use [RubyInstaller](https://rubyinstaller.org/) (Ruby 3.3.x)
    
-   Ruby 3.3.4 ships with Bundler 2.x — no specific Bundler version needed. Install project
+   Ruby 3.3.4 ships with Bundler 2.x. The committed `Gemfile.lock` is resolved with Bundler
+   **2.5.11** (the known-good version) — Bundler 2.5.11 or newer will work. Install project
    dependencies from the docs folder:
    ```bash
    cd docs
