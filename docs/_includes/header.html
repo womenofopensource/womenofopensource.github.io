@@ -1,0 +1,36 @@
+<header class="header">
+
+	<a href="#main-content" class="skip-to-main">Skip to main content</a>
+
+	<div class="wrap">
+
+		{% if site.data.settings.header_settings.logo_image %}
+		<a href="{{ site.baseurl }}/" class="header__logo" aria-label="Women of Open Source - Home">
+			<img src="{{ site.data.settings.header_settings.logo_image | relative_url }}" class="header__logo__img" alt="{{ site.data.settings.basic_settings.site_title }}">
+		</a>
+		{% else %}
+		<a href="{{ site.baseurl }}/" class="header__title">
+			{{ site.data.settings.basic_settings.site_title }}
+		</a>
+		{% endif %}
+
+		<div class="menu">
+			<button class="menu__toggle js-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="menu-list">
+				<div class="menu__toggle__icon"><span></span></div>
+			</button>
+			<div class="menu__wrap">
+				<nav aria-label="Main navigation">
+					<ul class="menu__list" id="menu-list">
+						{% for item in site.data.settings.menu_settings.menu_items %}
+						<li class="menu__list__item">
+							<a href="{{ item.url | relative_url }}" class="menu__list__item__link">{{ item.title }}</a>
+						</li>
+						{% endfor %}
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+	</div>
+
+</header>

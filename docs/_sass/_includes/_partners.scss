@@ -1,0 +1,399 @@
+// - - - - - - - - - - - - - - - - - -
+
+// Partners Grid
+
+// - - - - - - - - - - - - - - - - - -
+
+// Partners section title styling
+.partners-section-title {
+	margin-top: 60px;
+	
+	@include mq(tabletp) {
+		margin-top: 75px;
+	}
+	
+	@include mq(laptop) {
+		margin-top: 90px;
+	}
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Partners Grid
+
+.partners-grid {
+	padding: 40px 0;
+	background: $background-alt-color;
+
+	@include mq(tabletp) {
+		padding: 60px 0;
+	}
+
+	@include mq(laptop) {
+		padding: 80px 0;
+	}
+}
+
+.partners-grid.partners-grid--continuous {
+	padding-top: 20px;
+	margin-top: -40px;
+
+	@include mq(tabletp) {
+		padding-top: 30px;
+		margin-top: -40px;
+	}
+
+	@include mq(laptop) {
+		padding-top: 40px;
+		margin-top: -40px;
+	}
+}
+
+.partners-grid__title {
+	margin-bottom: 30px;
+	text-align: center;
+	color: $text-dark-color;
+
+	@include mq(tabletp) {
+		margin-bottom: 40px;
+	}
+
+	@include mq(laptop) {
+		margin-bottom: 60px;
+	}
+}
+
+.partners-grid__items {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 30px;
+
+	@include mq(tabletp) {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 40px;
+	}
+
+	@include mq(laptop) {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 50px;
+	}
+}
+
+.partner-card {
+	background: $background-color;
+	@include box-shadow(0, 6px, 16px, rgba(0,0,0,0.05));
+	@include transition(all 0.4s cubic-bezier(0.2, 0.3, 0, 1));
+	overflow: hidden;
+
+	&:hover {
+		@include box-shadow(0, 8px, 24px, rgba(0,0,0,0.15));
+		@include translate(0, -4px);
+
+		.partner-card__image {
+			@include scale(1.1);
+		}
+
+		.partner-card__title {
+			color: $accent-color;
+		}
+	}
+
+	a {
+		display: block;
+		text-decoration: none;
+		color: inherit;
+	}
+}
+
+.partner-card__image {
+	position: relative;
+	height: 0;
+	padding-bottom: 75%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	@include transition(all 0.6s cubic-bezier(0.2, 0.3, 0, 1));
+}
+
+.partner-card__title {
+	padding: 20px 20px 0;
+	font-size: 20px;
+	font-weight: $h3-weight;
+	color: $text-dark-color;
+	@include transition(color 0.3s ease);
+
+	@include mq(tabletp) {
+		padding: 25px 25px 0;
+		font-size: 22px;
+	}
+}
+
+.partner-card__subtitle {
+	padding: 10px 20px 20px;
+	font-size: 14px;
+	color: $text-light-color;
+
+	@include mq(tabletp) {
+		padding: 10px 25px 25px;
+		font-size: 15px;
+	}
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Partner Profile Pages
+
+.hero--partner {
+	padding-bottom: 25px;
+
+	@include mq(tabletp) {
+		padding-bottom: 45px;
+	}
+
+	@include mq(laptop) {
+		padding-bottom: 55px;
+	}
+}
+
+.partner-hero-content {
+	text-align: center;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.partner-hero-tagline {
+	font-size: 18px;
+	margin-top: 10px;
+	opacity: 0.9;
+
+	@include mq(tabletp) {
+		font-size: 20px;
+		margin-top: 15px;
+	}
+}
+
+.partner-hero-meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+	margin-top: 20px;
+	font-size: 15px;
+	opacity: 0.9;
+
+	@include mq(tabletp) {
+		font-size: 16px;
+		gap: 30px;
+		margin-top: 25px;
+	}
+}
+
+.partner-hero-meta__item {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.partner-hero-links {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	justify-content: center;
+	margin-top: 30px;
+
+	@include mq(tabletp) {
+		gap: 20px;
+		margin-top: 40px;
+	}
+}
+
+.partner-hero-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 12px 24px;
+	background: rgba(255, 255, 255, 0.2);
+	border: 2px solid rgba(255, 255, 255, 0.3);
+	border-radius: 6px;
+	color: $background-color;
+	text-decoration: none;
+	font-weight: $bold-weight;
+	font-size: 15px;
+	@include transition(all 0.3s ease);
+
+	&:hover {
+		background: rgba(255, 255, 255, 0.3);
+		border-color: rgba(255, 255, 255, 0.5);
+		@include translate(0, -2px);
+	}
+
+	i {
+		font-size: 16px;
+	}
+
+	@include mq(tabletp) {
+		padding: 14px 28px;
+		font-size: 16px;
+	}
+}
+
+.partner-profile {
+	padding: 15px 0;
+
+	@include mq(tabletp) {
+		padding: 20px 0;
+	}
+
+	@include mq(laptop) {
+		padding: 25px 0;
+	}
+}
+
+.partner-profile-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 40px;
+
+	@include mq(tabletp) {
+		gap: 50px;
+	}
+
+	@include mq(laptop) {
+		grid-template-columns: 300px 1fr;
+		gap: 60px;
+	}
+}
+
+.partner-sidebar {
+	@include mq(laptop) {
+		position: sticky;
+		top: 100px;
+		align-self: start;
+	}
+}
+
+.partner-logo-wrapper {
+	background: $background-color;
+	padding: 30px;
+	border-radius: 8px;
+	@include box-shadow(0, 2px, 8px, rgba(0,0,0,0.1));
+	margin-bottom: 30px;
+
+	@include mq(tabletp) {
+		padding: 40px;
+	}
+}
+
+.partner-logo {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.partner-main-content {
+	max-width: 800px;
+}
+
+.partner-quote {
+	background: $background-alt-color;
+	padding: 30px;
+	border-radius: 8px;
+	margin-bottom: 30px;
+	border-left: 4px solid $accent-color;
+
+	@include mq(tabletp) {
+		padding: 40px;
+		margin-bottom: 40px;
+	}
+
+	@include mq(laptop) {
+		padding-bottom: 80px;
+	}
+
+	blockquote {
+		margin: 0;
+		padding: 0;
+		border: none;
+
+		p {
+			font-size: 18px;
+			line-height: 1.7;
+			color: $text-dark-color;
+			font-style: italic;
+			margin: 0;
+
+			@include mq(tabletp) {
+				font-size: 20px;
+			}
+		}
+
+		footer {
+			margin-top: 20px;
+			font-size: 15px;
+			color: $text-medium-color;
+			font-style: normal;
+			font-weight: $bold-weight;
+
+			@include mq(tabletp) {
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+.partner-content {
+	font-size: 16px;
+	line-height: 1.8;
+	color: $text-medium-color;
+
+	h2, h3, h4 {
+		color: $text-dark-color;
+		margin-top: 40px;
+		margin-bottom: 20px;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	h2 {
+		font-size: 28px;
+		
+		@include mq(tabletp) {
+			font-size: 32px;
+		}
+	}
+
+	h3 {
+		font-size: 22px;
+		
+		@include mq(tabletp) {
+			font-size: 24px;
+		}
+	}
+
+	p {
+		margin-bottom: 20px;
+	}
+
+	ul, ol {
+		margin-bottom: 20px;
+		padding-left: 30px;
+
+		li {
+			margin-bottom: 10px;
+		}
+	}
+
+	a {
+		color: $accent-color;
+		text-decoration: underline;
+
+		&:hover {
+			color: darken($accent-color, 10%);
+		}
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+		border-radius: 8px;
+		margin: 30px 0;
+	}
+}

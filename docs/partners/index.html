@@ -1,0 +1,80 @@
+---
+layout: default
+title: Partners
+description: Meet the wonderful partners who support the Women of Open Source community.
+featured_image: /images/home/photo-soocon.jpg
+permalink: /partners/
+---
+
+<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url({{ page.featured_image | relative_url }})">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>Our Partners</h1>
+		<p>Supporting diversity and inclusion in open source</p>
+
+	</div>
+
+</section>
+
+<section class="single single--no-padding">
+
+	<div class="wrap">
+
+		<article class="single-post single-post--seamless">
+
+			<div class="single-post__content">
+				
+				<h2 class="partners-section-title">Become a Partner</h2>
+				
+				<p>Join us in supporting women and underrepresented groups in open source! As a partner of the Women of Open Source community, you'll be helping to create a more inclusive and diverse technology ecosystem.</p>
+
+				<h3>Partnership Benefits</h3>
+				
+				<ul>
+					<li>Visibility and recognition within our growing community</li>
+					<li>Opportunities to connect with talented contributors and maintainers</li>
+					<li>Demonstrate your commitment to diversity and inclusion in tech</li>
+					<li>Support events, workshops, and initiatives that make a difference</li>
+				</ul>
+
+				<p>Interested in becoming a partner? <a href="{{ '/contact/' | relative_url }}">Get in touch with us</a> to learn more about partnership opportunities.</p>
+
+			</div>
+
+		</article>
+
+	</div>
+
+</section>
+
+<section class="partners-grid partners-grid--continuous">
+
+	<div class="wrap">
+
+		<h2 class="partners-grid__title">Our Current Partners</h2>
+
+		<div class="partners-grid__items">
+
+			{% for project in site.partners reversed %}
+
+			<div class="partner-card">
+				<a href="{{ project.url | relative_url }}">
+					<div class="partner-card__image" style="background-image: url({{ project.featured_image | relative_url }})"></div>
+					<h3 class="partner-card__title">{{ project.title }}</h3>
+					<p class="partner-card__subtitle">{{ project.subtitle }}</p>
+				</a>
+			</div>
+
+			{% endfor %}
+
+		</div>
+
+	</div>
+
+</section>
+    
