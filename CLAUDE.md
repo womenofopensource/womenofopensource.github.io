@@ -4,7 +4,11 @@ Source for the [Women of Open Source website](https://womenofopensource.org/), a
 Jekyll site hosted on GitHub Pages.
 
 - **Repo:** `womenofopensource/womenofopensource.github.io`
-- **Active branch:** `new-theme` (PR #9) — the new-theme rework, not yet merged to `main`
+- **Branches:** work happens on short-lived branches off `main`; `main` auto-deploys to
+  production via GitHub Pages (legacy build from `main` / `/docs`). The `new-theme` branch
+  (PR #9) has been merged and is deprecated.
+- **PR workflow:** every PR gets an automatic GitHub Copilot review — wait for it, address
+  its findings, and re-request the review before merging.
 - **The entire Jekyll site lives in `docs/`.** Run all Jekyll commands from `docs/`.
 
 ## Tech stack
@@ -70,7 +74,7 @@ Layouts are applied automatically per collection via `defaults` in `_config.yml`
 
 ## Outstanding / known TODOs
 
-- **Theme license** (`docs/_LICENSE.md`): awaiting theme creator's permission to host on GitHub. *(still open)*
+- **Theme license** (`docs/_LICENSE.md`): ✅ resolved — team decided use-not-redistribute is fine (2026-08).
 - **Formspree dashboard:** hCaptcha Account Secret — ✅ done (2026-08).
 - **hCaptcha dashboard:** allowed domains added — ✅ done (2026-08).
 - **Contact form:** ✅ fully working — verified end-to-end (Formspree + hCaptcha + `/thanks/`
@@ -86,5 +90,5 @@ Layouts are applied automatically per collection via `defaults` in `_config.yml`
 - Claude Code may be launched from the parent folder `local.womenofopensource.org/`; the git
   repo and project root is the `womenofopensource.github.io/` subfolder. For the smoothest
   experience, launch Claude from inside `womenofopensource.github.io/`.
-- Prior work on this branch was done with GitHub Copilot (SEO/security/accessibility audit,
-  contact form, keyboard-accessible speaker filters, jQuery 3.7.1 upgrade).
+- The initial new-theme rework was done with GitHub Copilot (SEO/security/accessibility
+  audit, contact form, keyboard-accessible speaker filters, jQuery 3.7.1 upgrade).
