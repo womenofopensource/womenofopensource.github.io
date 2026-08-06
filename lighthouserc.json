@@ -2,13 +2,6 @@
   "ci": {
     "collect": {
       "staticDistDir": "docs/_site",
-      "url": [
-        "http://localhost/index.html",
-        "http://localhost/about/index.html",
-        "http://localhost/speakers/index.html",
-        "http://localhost/speakers/lorna-jane-mitchell.html",
-        "http://localhost/contact/index.html"
-      ],
       "numberOfRuns": 1
     },
     "assert": {
