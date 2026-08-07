@@ -48,6 +48,33 @@
 
 
 
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - External links
+
+	// Make links to other sites open in a new tab, natively. External links are marked
+	// here (rather than opened with window.open(), which mobile browsers block as a
+	// popup) so the delegated click handler can let the browser handle them. Also adds a
+	// safe rel. Runs from pageFunctions() on every page load (initial + AJAX); idempotent.
+	window.markExternalLinks = function () {
+
+		var host = window.location.hostname;
+
+		document.querySelectorAll('a[href]').forEach( function (link) {
+
+			// Skip same-site links and non-http(s) links (mailto:, tel:, #anchors)
+			if ( !link.hostname || link.hostname === host ) { return; }
+			if ( link.protocol !== 'http:' && link.protocol !== 'https:' ) { return; }
+
+			link.setAttribute('target', '_blank');
+
+			var rel = ( link.getAttribute('rel') || '' ).split(/\s+/).filter(Boolean);
+			if ( rel.indexOf('noopener') === -1 ) { rel.push('noopener'); }
+			if ( rel.indexOf('noreferrer') === -1 ) { rel.push('noreferrer'); }
+			link.setAttribute('rel', rel.join(' '));
+		});
+	};
+
+
+
 	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Speakers directory
 
 	// Search + filter behaviour for the speakers directory. Lives here (not inline on the
@@ -331,12 +358,13 @@
 			// Get the link target
 			var thisTarget = $(this).attr('href');
 
-			// Links that open in a new tab: let the browser handle them natively and
-			// bail out before preventDefault(). Opening them via window.open() from this
-			// delegated handler is blocked as a popup by mobile browsers, so the link
-			// would appear to do nothing on mobile. Native handling honours the link's
-			// own target="_blank" rel="noopener noreferrer".
-			if ($(this).attr('target') === '_blank') {
+			// New-tab links and links to any other site are handled natively by the
+			// browser: bail out before preventDefault(). Opening them via window.open()
+			// from this delegated handler is blocked as a popup by mobile browsers, so
+			// they would appear to do nothing on mobile. markExternalLinks() has already
+			// added target="_blank" and a safe rel to cross-origin links (including plain
+			// Markdown links in page content) so they open in a new tab everywhere.
+			if ($(this).attr('target') === '_blank' || (this.hostname && this.hostname !== window.location.hostname)) {
 				return;
 			}
 
@@ -606,6 +634,13 @@
 
 		// Render any hCaptcha widgets present in the (possibly AJAX-loaded) content
 		window.renderHCaptchas();
+
+
+
+		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - External links
+
+		// Open links to other sites in a new tab (mobile-safe – see markExternalLinks)
+		window.markExternalLinks();
 
 
 
