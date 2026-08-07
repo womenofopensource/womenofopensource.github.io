@@ -22,7 +22,7 @@ profiles:
   linkedin: https://www.linkedin.com/in/eriolfox/
   mastodon: https://hachyderm.io/@erioldoesdesign
   bluesky: https://bsky.app/profile/erioldoesdesign.bsky.social
-  github: github.com/Erioldoesdesign
+  github: https://github.com/Erioldoesdesign
   website: https://erioldoesdesign.github.io/
 talks:
   - title: "Designing for security and privacy: Design lessons from human rights and civic technology"
