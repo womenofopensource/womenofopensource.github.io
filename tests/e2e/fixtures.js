@@ -1,4 +1,4 @@
-// Shared test fixture used by the "our own behaviour" specs.
+// Shared test fixture used by all specs.
 //
 // It keeps tests deterministic and off the wider internet by allowing only what the site
 // genuinely needs at runtime and blocking the rest:
@@ -7,7 +7,8 @@
 //   - blocked: hCaptcha, Font Awesome and web fonts — none affect the behaviour under
 //     test, and the hCaptcha widget is domain-locked to production anyway.
 //
-// The external-links spec does NOT use this fixture (it manages its own routing).
+// The external-links spec uses this fixture too (it needs jQuery to load) and layers on its
+// own route for the one off-site link it clicks, so that navigation resolves offline.
 
 const base = require('@playwright/test');
 
