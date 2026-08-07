@@ -69,7 +69,7 @@ page — a few short paragraphs about who you are and what you speak about.
 ## Field reference
 
 | Field | Required | Where it appears |
-|---|---|---|
+| --- | --- | --- |
 | `title` | ✅ | Browser tab / SEO `<title>`. Usually the same as `name`. |
 | `name` | ✅ | Display name — profile hero heading, "About …", and the directory card. |
 | `slug` | ✅ | The page URL: `/speakers/<slug>`. Use lowercase with hyphens. |
