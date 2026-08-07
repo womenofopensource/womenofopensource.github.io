@@ -328,11 +328,20 @@
 
 		$(document).on('click', 'a', function (event){
 
-			// Don't follow link
-			event.preventDefault();
-
 			// Get the link target
 			var thisTarget = $(this).attr('href');
+
+			// Links that open in a new tab: let the browser handle them natively and
+			// bail out before preventDefault(). Opening them via window.open() from this
+			// delegated handler is blocked as a popup by mobile browsers, so the link
+			// would appear to do nothing on mobile. Native handling honours the link's
+			// own target="_blank" rel="noopener noreferrer".
+			if ($(this).attr('target') === '_blank') {
+				return;
+			}
+
+			// Don't follow link
+			event.preventDefault();
 
 			// If we don't want to use ajax, or the link is an anchor/mailto/tel
 			if ($(this).hasClass('js-no-ajax') || thisTarget.indexOf('#') >= 0 || thisTarget.indexOf('mailto:') >= 0 || thisTarget.indexOf('tel:') >= 0) {
