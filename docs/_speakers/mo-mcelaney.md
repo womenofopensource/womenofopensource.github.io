@@ -2,7 +2,7 @@
 title: Mo McElaney                       # browser tab / SEO title (usually same as name)
 name: Mo McElaney                        # display name
 slug: mo-mcElaney                        # URL: /speakers/ada-lovelace
-tagline: Mathematician & the first programmer
+tagline: Taking an ethical approach to open source community building.
 description: Mo speaks about ethics in tech, community, and open source ai.
 featured_image: '/images/speakers/mo-mcelaney.jpg'
 location: United States                  # country (used for the country filter)
