@@ -9,6 +9,14 @@
 			<a href="https://jekyllthemes.io" target="_blank" rel="noopener noreferrer">Jekyll Themes</a>
 		</div>
 
+		{% if page.path %}
+		<p class="footer__edit">
+			<a href="{{ site.data.settings.repository_settings.url }}/edit/{{ site.data.settings.repository_settings.branch }}/docs/{{ page.path }}" target="_blank" rel="noopener noreferrer">
+				<i class="fab fa-github" aria-hidden="true"></i> Edit this page on GitHub
+			</a>
+		</p>
+		{% endif %}
+
 		{% include socials.html %}
 
 	</div>

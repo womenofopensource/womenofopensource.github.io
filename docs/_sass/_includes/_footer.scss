@@ -92,6 +92,24 @@
 	}
 }
 
+.footer__edit {
+	margin-top: 12px;
+	font-size: 13px;
+
+	a {
+		color: $text-light-color;
+		font-weight: $regular-weight;
+
+		.fab {
+			margin-right: 5px;
+		}
+
+		&:hover {
+			color: $accent-color;
+		}
+	}
+}
+
 .footer .socials {
 	margin-top: 25px;
 

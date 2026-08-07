@@ -30,6 +30,11 @@ menu_settings:
 footer_settings:
   footer_tagline: Supporting both cis and trans women and non-binary and gender-nonconforming people who are interested in and/or contributing to Open Source.
 
+repository_settings:
+  # Used for the "Edit this page on GitHub" footer link (and other repo links).
+  url: 'https://github.com/womenofopensource/womenofopensource.github.io'
+  branch: main
+
 hero_settings:
   overlay_opacity: 0.8
 
