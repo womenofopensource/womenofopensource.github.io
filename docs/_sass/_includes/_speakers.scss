@@ -24,6 +24,31 @@
 	}
 }
 
+.speakers-cta {
+	margin-bottom: 30px;
+	padding: 20px 25px;
+	background: lighten($accent-color, 45%);
+	border-left: 4px solid $accent-color;
+	border-radius: 4px;
+
+	p {
+		margin: 0;
+		font-size: 15px;
+		line-height: 1.6;
+		color: $text-dark-color;
+	}
+
+	a {
+		color: $accent-color;
+		font-weight: $bold-weight;
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
 .speakers-filters {
 	display: flex;
 	flex-wrap: wrap;
