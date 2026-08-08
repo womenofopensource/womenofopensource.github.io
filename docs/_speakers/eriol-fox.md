@@ -4,6 +4,7 @@ name: Eriol Fox
 slug: eriol-fox
 tagline: Open Source Design Maintainer and Designer at The Open Home Foundation & Lockdown Systems
 featured_image: '/images/speakers/eriol-fox.jpg'
+hero_image: '/images/hero-eriol-fox.jpg'
 location: United Kingdom
 languages:
   - English
@@ -41,7 +42,7 @@ talks:
       - Design Matters Copenhagen 2019
       - Birmingham Design Festival 2019
   - title: "The secret lives of OSS designers: Understanding designers contributing to OSS"
-    abstract: "In October 2023 Eriol while working at Superbloom.design published findings from 10-16 week diary studies reported by designers actively working on OSS contributions. The diary studies aim was to investigate some of the key questions relating to design in OSS and fill some of the larger systemic gaps of information from non-code contributors' experiences in OSS. There is existing research about designers in open source, but it has focused on analysis of data on issue trackers or interviews with designers. This session will cover an overview of the study, some of the key learnings and recommendations on how to improve and progress design in OSS. Project Repo https://github.com/Erioldoesdesign/Diary-Studies-Designers-in-OSS"
+    abstract: "In October 2023 Eriol while working at Superbloom.design published findings from 10-16 week diary studies reported by designers actively working on OSS contributions. The diary studies aim was to investigate some of the key questions relating to design in OSS and fill some of the larger systemic gaps of information from non-code contributors' experiences in OSS. There is existing research about designers in open source, but it has focused on analysis of data on issue trackers or interviews with designers. This session will cover an overview of the study, some of the key learnings and recommendations on how to improve and progress design in OSS. Project Repo [https://github.com/Erioldoesdesign/Diary-Studies-Designers-in-OSS](https://github.com/Erioldoesdesign/Diary-Studies-Designers-in-OSS)
     delivered_at:
       - OGGCAMP 2026
       - FOSDEM 2024
@@ -54,7 +55,7 @@ talks:
 
   - title: "Workhop/Hackathon: Open Source Design Contributions for OSS"
     abstract: "Open Source design has a plethora of hurdles to leap before it could become fully adopted by the global design community. Exploitative 'work for free attitudes', workflows and how design functions/roles connect up through a product life cycle, how our software doesn't yet allow for robust and collaborative versioning across different designers and how the open source community as a whole, is over represented by those with privilege, access and ability. Eriol has been piloting a series of design workshops/hackathons, partnering with various OSS projects where together, we look to solve the challenges in how open source design can be contributed effectively and how designers can engage through OSS and OSS4SG (Open Source for Social Good inclusive of OSS Civic Tech) that makes a difference in the world. There are two versions of this workshop, one catered to designers wanting to contribute to OSS and one catered towards developers/OSS project maintainers to learn and grow design skills to contribute to their own projects and/or set up knowledge base for welcoming designers into their OSS proejcts. This workshop covers the best first issues to attract design contributions and the processes involved in building a design function of your OSS community.
-    - Project Repo https://github.com/Erioldoesdesign/The-Design-We-Open"
+    - Project Repo [https://github.com/Erioldoesdesign/The-Design-We-Open](https://github.com/Erioldoesdesign/The-Design-We-Open)
     delivered_at:
       - IXDA Berlin 2018 & 2019
       - OpenUp Global Summit 2019
@@ -69,9 +70,9 @@ talks:
       
 ---
 
-Eriol has been working as a designer for 15+ years working in for-profits and then NGO’s and open-source software organisations, working on complex problems like sustainable food systems, peace-building, censorship circumvention OSS, Human Rights OSS tools and crisis response technology. Eriol now works at The Open Home Foundation on OSS first smart home technology.
+Eriol has been working as a designer for 15+ years working in for-profits and then NGO's and open-source software organisations, working on complex problems like sustainable food systems, peace-building, censorship circumvention OSS, Human Rights OSS tools and crisis response technology. Eriol now works at The Open Home Foundation on OSS first smart home technology.
 
-Eriol is part of the core teams at Open Source Design (http://opensourcedesign.net/) Sustain UX & Design working group (https://sustainoss.org/working-groups/design-and-ux/) and help hosts podcast about open source and design (https://sosdesign.sustainoss.org/)
+Eriol is part of the core teams at Open Source Design [http://opensourcedesign.net/](http://opensourcedesign.net/) Sustain UX & Design working group [https://sustainoss.org/working-groups/design-and-ux/](https://sustainoss.org/working-groups/design-and-ux/) and help host a podcast about open source and design [https://sosdesign.sustainoss.org/](https://sosdesign.sustainoss.org/).
 
 Eriol is a non-binary, queer person who uses they/them pronouns.
 
