@@ -4,7 +4,7 @@ name: Eriol Fox
 slug: eriol-fox
 tagline: Open Source Design Maintainer and Designer at The Open Home Foundation & Lockdown Systems
 featured_image: '/images/speakers/eriol-fox.jpg'
-hero_image: '/images/hero-eriol-fox.jpg'
+hero_image: '/images/speakers/hero-eriol-fox.jpg'
 location: United Kingdom
 languages:
   - English
@@ -53,9 +53,8 @@ talks:
       - GitLab Commit 2020
       - Rights Con 2020
 
-  - title: "Workhop/Hackathon: Open Source Design Contributions for OSS"
-    abstract: "Open Source design has a plethora of hurdles to leap before it could become fully adopted by the global design community. Exploitative 'work for free attitudes', workflows and how design functions/roles connect up through a product life cycle, how our software doesn't yet allow for robust and collaborative versioning across different designers and how the open source community as a whole, is over represented by those with privilege, access and ability. Eriol has been piloting a series of design workshops/hackathons, partnering with various OSS projects where together, we look to solve the challenges in how open source design can be contributed effectively and how designers can engage through OSS and OSS4SG (Open Source for Social Good inclusive of OSS Civic Tech) that makes a difference in the world. There are two versions of this workshop, one catered to designers wanting to contribute to OSS and one catered towards developers/OSS project maintainers to learn and grow design skills to contribute to their own projects and/or set up knowledge base for welcoming designers into their OSS proejcts. This workshop covers the best first issues to attract design contributions and the processes involved in building a design function of your OSS community."
-    - Project Repo [https://github.com/Erioldoesdesign/The-Design-We-Open](https://github.com/Erioldoesdesign/The-Design-We-Open)
+  - title: "Workshop/Hackathon: Open Source Design Contributions for OSS"
+    abstract: "Open Source design has a plethora of hurdles to leap before it could become fully adopted by the global design community. Exploitative 'work for free' attitudes, workflows and how design functions/roles connect up through a product life cycle, how our software doesn't yet allow for robust and collaborative versioning across different designers and how the open source community as a whole, is over represented by those with privilege, access and ability. Eriol has been piloting a series of design workshops/hackathons, partnering with various OSS projects where together, we look to solve the challenges in how open source design can be contributed effectively and how designers can engage through OSS and OSS4SG (Open Source for Social Good inclusive of OSS Civic Tech) that makes a difference in the world. There are two versions of this workshop, one catered to designers wanting to contribute to OSS and one catered towards developers/OSS project maintainers to learn and grow design skills to contribute to their own projects and/or set up knowledge base for welcoming designers into their OSS projects. This workshop covers the best first issues to attract design contributions and the processes involved in building a design function of your OSS community. Project repo: [The Design We Open](https://github.com/Erioldoesdesign/The-Design-We-Open)."
     delivered_at:
       - IXDA Berlin 2018 & 2019
       - OpenUp Global Summit 2019
