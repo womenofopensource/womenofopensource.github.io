@@ -137,6 +137,26 @@
 	}
 }
 
+// Empty state — shown until the first partner joins
+.partners-empty {
+	text-align: center;
+	max-width: 640px;
+	margin: 0 auto;
+	padding: 10px 0 20px;
+}
+
+.partners-empty__text {
+	color: $text-medium-color;
+	font-size: 16px;
+	line-height: 1.7;
+	margin-bottom: 30px;
+
+	@include mq(tabletp) {
+		font-size: 18px;
+		margin-bottom: 40px;
+	}
+}
+
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Partner Profile Pages
 
 .hero--partner {
