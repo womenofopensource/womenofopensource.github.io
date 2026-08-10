@@ -1,7 +1,7 @@
 ---
 title: Mo McElaney                       # browser tab / SEO title (usually same as name)
 name: Mo McElaney                        # display name
-slug: mo-mcElaney                        # URL: /speakers/ada-lovelace
+slug: mo-mcelaney                        # URL: /speakers/mo-mcelaney
 tagline: Taking an ethical approach to open source community building.
 description: Mo speaks about ethics in tech, community, and open source ai.
 featured_image: '/images/speakers/mo-mcelaney.jpg'
