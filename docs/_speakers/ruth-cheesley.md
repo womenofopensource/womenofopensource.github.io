@@ -1,6 +1,7 @@
 ---
 title: Sīlavāpi Cheesley
 name: Sīlavāpi (ex Ruth) Cheesley
+pronouns: she/her
 slug: silavapi-cheesley
 tagline: Open Source Community Manager & Mautic Project Lead
 featured_image: '/images/speakers/ruth-cheesley.jpg'

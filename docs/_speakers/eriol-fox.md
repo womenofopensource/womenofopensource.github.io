@@ -1,6 +1,7 @@
 ---
 title: Eriol Fox
 name: Eriol Fox
+pronouns: they/them
 slug: eriol-fox
 tagline: Open Source Design Maintainer and Designer at The Open Home Foundation & Lockdown Systems
 featured_image: '/images/speakers/eriol-fox.jpg'

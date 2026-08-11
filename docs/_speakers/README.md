@@ -33,6 +33,7 @@ don't need (see the table below).
 ---
 title: Ada Lovelace                       # browser tab / SEO title (usually same as name)
 name: Ada Lovelace                        # display name
+pronouns: she/her                         # optional (e.g. she/her, they/them, he/him)
 slug: ada-lovelace                        # URL: /speakers/ada-lovelace
 tagline: Mathematician & the first programmer
 description: Ada Lovelace speaks about the history and future of computing.
@@ -72,6 +73,7 @@ page — a few short paragraphs about who you are and what you speak about.
 | --- | --- | --- |
 | `title` | ✅ | Browser tab / SEO `<title>`. Usually the same as `name`. |
 | `name` | ✅ | Display name — profile hero heading, "About …", and the directory card. |
+| `pronouns` | Optional | Your pronouns (e.g. `she/her`, `they/them`, `he/him`). Shown under your name on the hero and the directory card. Omit to leave it off. |
 | `slug` | ✅ | The page URL: `/speakers/<slug>`. Use lowercase with hyphens. |
 | `featured_image` | ✅ | Photo shown on the profile sidebar, the directory card, and as the social‑share image. |
 | `tagline` | Recommended | Short one‑line role/description under the name (hero + card). |
