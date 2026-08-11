@@ -7,17 +7,17 @@
 
 .hero {
 	position: relative;
-	margin-top: 40px;
+	margin-top: 28px;
 	padding: 60px 0 100px;
 	background: $hero-background-color;
 
 	@include mq(tabletp) {
-		margin-top: 50px;
+		margin-top: 34px;
 		padding: 120px 0 180px;
 	}
 
 	@include mq(laptop) {
-		margin-top: 60px;
+		margin-top: 40px;
 		padding: 160px 0 220px;
 	}
 
