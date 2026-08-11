@@ -426,7 +426,10 @@
 	}
 }
 
-.speaker-hero-pronouns {
+// Scoped to the speaker hero and given enough specificity to win over the generic
+// `.hero p` and `.hero.hero--single p` rules, which would otherwise override the colour
+// and margin here.
+.hero.hero--speaker .speaker-hero-pronouns {
 	color: $hero-text-color;
 	font-size: 15px;
 	font-weight: $regular-weight;
