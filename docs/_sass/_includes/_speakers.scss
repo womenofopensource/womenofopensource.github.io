@@ -10,22 +10,22 @@
 
 .speakers-directory {
 	margin-top: -40px;
-	padding: 0 0 40px;
+	padding: 20px 0 40px;
 	background: $background-color;
 
 	@include mq(tabletp) {
 		margin-top: -60px;
-		padding: 0 0 60px;
+		padding: 20px 0 60px;
 	}
 
 	@include mq(laptop) {
 		margin-top: -60px;
-		padding: 0 0 80px;
+		padding: 20px 0 80px;
 	}
 }
 
 .speakers-cta {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	padding: 20px 25px;
 	background: lighten($accent-color, 45%);
 	border-left: 4px solid $accent-color;
