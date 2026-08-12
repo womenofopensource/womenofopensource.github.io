@@ -1,6 +1,7 @@
 ---
 title: Lorna Jane Mitchell
 name: Lorna Jane Mitchell
+pronouns: she/her
 slug: lorna-jane-mitchell
 tagline: API Specialist, Developer Advocate & Technical Author
 featured_image: '/images/speakers/lorna-jane-mitchell.jpg'

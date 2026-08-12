@@ -131,6 +131,9 @@ permalink: /speakers/
 					
 					<div class="speaker-card__content">
 						<h3 class="speaker-card__name">{{ speaker.name }}</h3>
+						{% if speaker.pronouns %}
+						<p class="speaker-card__pronouns">{{ speaker.pronouns | escape }}</p>
+						{% endif %}
 						<p class="speaker-card__tagline">{{ speaker.tagline }}</p>
 						<p class="speaker-card__location">📍 {{ speaker.location }}</p>
 						

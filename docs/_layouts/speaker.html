@@ -18,6 +18,9 @@ layout: default
 
 		<div class="speaker-hero-content">
 			<h1>{{ page.name }}</h1>
+			{% if page.pronouns %}
+			<p class="speaker-hero-pronouns">{{ page.pronouns | escape }}</p>
+			{% endif %}
 			<p class="speaker-hero-tagline">{{ page.tagline }}</p>
 			
 			<div class="speaker-hero-meta">

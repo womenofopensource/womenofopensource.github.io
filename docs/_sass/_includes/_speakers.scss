@@ -335,6 +335,14 @@
 	}
 }
 
+.speaker-card__pronouns {
+	font-size: 13px;
+	font-weight: $regular-weight;
+	color: $text-light-color;
+	margin-top: -4px;
+	margin-bottom: 10px;
+}
+
 .speaker-card__tagline {
 	font-size: 14px;
 	color: $text-medium-color;
@@ -415,6 +423,21 @@
 	h1 {
 		color: $hero-text-color;
 		margin-bottom: 10px;
+	}
+}
+
+// Scoped to the speaker hero and given enough specificity to win over the generic
+// `.hero p` and `.hero.hero--single p` rules, which would otherwise override the colour
+// and margin here.
+.hero.hero--speaker .speaker-hero-pronouns {
+	color: $hero-text-color;
+	font-size: 15px;
+	font-weight: $regular-weight;
+	margin-top: 6px;
+	opacity: 0.75;
+
+	@include mq(tabletp) {
+		font-size: 16px;
 	}
 }
 
