@@ -507,16 +507,16 @@
 // Speaker Profile Section
 .speaker-profile {
 	margin-top: -40px;
-	padding: 0 0 60px;
+	padding: 20px 0 60px;
 	background: $background-color;
 
 	@include mq(tabletp) {
 		margin-top: -60px;
-		padding: 0 0 80px;
+		padding: 20px 0 80px;
 	}
 
 	@include mq(laptop) {
-		padding: 0 0 100px;
+		padding: 20px 0 100px;
 	}
 }
 
