@@ -4,7 +4,7 @@ name: Thulisile Sibanda
 pronouns: she/her
 slug: thulisile-sibanda
 tagline: Open Source Community Manager, Maintainer and Program Manager
-description: Thulisile Sibanda speaks about open source community building, governance, technical writing, and ecosystems in Open Source.
+description: Thulisile Sibanda speaks about open source community building, governance, technical writing, and sustaining ecosystems.
 featured_image: '/images/speakers/thulisile-sibanda.jpeg'
 hero_image: '/images/speakers/hero-thulisile-sibanda.jpg'
 location: United Kingdom
