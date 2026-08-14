@@ -4,6 +4,7 @@ name: Thulisile Sibanda
 pronouns: she/her
 slug: thulisile-sibanda
 tagline: Open Source Community Manager, Maintainer and Program Manager
+description: Thulie is a Community Builder but also wears many hats including being a Maintainer, Contributor, Program Manager, and occasional data person. What ties it all together? Helping individuals do their best work in Open Source.
 featured_image: '/images/speakers/thulisile-sibanda.jpeg'
 hero_image: '/images/speakers/hero-thulisile-sibanda.jpg'
 location: United Kingdom
