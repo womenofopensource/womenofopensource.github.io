@@ -50,7 +50,6 @@ Thulisile is an Open Source maintainer and community builder who works across do
 Currently, Thulie is involved in the AsyncAPI Initiative, where she contributes both strategically and hands-on as Chair of the Governance Board and a member of the Technical Steering Committee. She helps guide direction, support working groups, mentor contributors, and stay close to the day-to-day realities of the community.
 
 In practice, her work looks like:
-- 
 
 - Designing and running Open Source programs and working groups
 - Maintaining community processes and governance practices
