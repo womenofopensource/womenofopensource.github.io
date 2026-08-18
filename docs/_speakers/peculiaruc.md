@@ -4,7 +4,7 @@ name: Peculiar C. Umeh
 pronouns: she/her
 slug: peculiaruc
 tagline: Open Source Advocate, Project Manager and Community Builder
-featured_image: '/images/speakers/peculiar-uc.jpg'
+featured_image: '/images/speakers/peculiaruc.jpg'
 location: Nigeria
 languages:
   - English
