@@ -26,7 +26,7 @@ profiles:
   website:
 talks:
   - title: "Data to Action: Build Healthy & Sustainable OSS Communities"
-    abstract: "Being proactive about improving sustainability before it becomes a crisis can help make our software better for all of us. However, not everyone has the experience or skills required to make improvements that will benefit their community over the long-term. This talk focuses on tools and techniques to build healthy and sustainable OSS projects.."
+    abstract: "Being proactive about improving sustainability before it becomes a crisis can help make our software better for all of us. However, not everyone has the experience or skills required to make improvements that will benefit their community over the long-term. This talk focuses on tools and techniques to build healthy and sustainable OSS projects."
     delivered_at:
       - FOSS Backstage 2025
 
@@ -36,6 +36,6 @@ talks:
       - OSCAFest 2025
 ---
 
-Peculiar C. Umeh is a passionate advocate for open source with background in Software developer. With experience in Project & community management, governance, and open source project leadership
-She is committed to helping early careers and young open source contributor master the act of open soucre contribution and how to navigate the landscape. 
-Peculiar speaks at conferences, meet-ups on topics including open source education, project management, community building, Software development, and contributor sustainablity. 
+Peculiar C. Umeh is a passionate advocate for open source with a background in software development. With experience in project and community management, governance, and open source project leadership, she is committed to helping early-career professionals and young open source contributors master the art of open source contribution and how to navigate the landscape.
+
+Peculiar speaks at conferences and meet-ups on topics including open source education, project management, community building, software development, and contributor sustainability. 
