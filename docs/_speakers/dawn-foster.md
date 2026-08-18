@@ -48,4 +48,4 @@ hero_image: '/images/speakers/hero-dawn-foster.jpg
 
 Dr. Dawn Foster is an OSS strategy consultant. She is also on the board of CHAOSS, OpenUK, and the Software Stewardship Lab. She is a TODO Group Ambassador and was previously a co-chair of the CNCF Contributor Strategy Technical Advisory Group. She has 20+ years of experience at companies like VMware and Intel with expertise in community, strategy, governance, and metrics. She has spoken at over 100 industry events and has a BS in computer science, an MBA, and a PhD. In her spare time she enjoys reading science fiction, running, 3D printing, and traveling.
 
-You can see all of her past talks at https://fastwonderblog.com/speaking/
+You can see all of her past talks on [her speaking page](https://fastwonderblog.com/speaking/).
