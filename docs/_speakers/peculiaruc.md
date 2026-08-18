@@ -38,4 +38,4 @@ talks:
 
 Peculiar C. Umeh is a passionate advocate for open source with a background in software development. With experience in project and community management, governance, and open source project leadership, she is committed to helping early-career professionals and young open source contributors master the art of open source contribution and how to navigate the landscape.
 
-Peculiar speaks at conferences and meet-ups on topics including open source education, project management, community building, software development, and contributor sustainability. 
+Peculiar speaks at conferences and meet-ups on topics including open source education, project management, community building, software development, and contributor sustainability.
