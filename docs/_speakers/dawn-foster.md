@@ -43,7 +43,7 @@ talks:                                    # optional — one entry per talk
     abstract: "Details about the importance of governance, how to define project governance, using governance as a pathway to leadership, creating an intentional culture, and making project ownership (e.g., individual, organization, foundation) decisions. [Video](https://www.youtube.com/watch?v=bSBmq2AUM18&list=PLbzoR-pLrL6p2URzlq8xlNtBhPspd2xpi)"
     delivered_at:
       - Open Source Summit NA, 2026
-hero_image: '/images/speakers/hero-dawn-foster.jpg
+hero_image: '/images/speakers/hero-dawn-foster.jpg'
 ---
 
 Dr. Dawn Foster is an OSS strategy consultant. She is also on the board of CHAOSS, OpenUK, and the Software Stewardship Lab. She is a TODO Group Ambassador and was previously a co-chair of the CNCF Contributor Strategy Technical Advisory Group. She has 20+ years of experience at companies like VMware and Intel with expertise in community, strategy, governance, and metrics. She has spoken at over 100 industry events and has a BS in computer science, an MBA, and a PhD. In her spare time she enjoys reading science fiction, running, 3D printing, and traveling.
