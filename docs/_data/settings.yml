@@ -50,7 +50,7 @@ contact_settings:
 
 social_settings:
   facebook_url: 'https://facebook.com/WomenOfOpenSource'
-  twitter_url: 'https://twitter.com/WomenOfOS'
+  x_url: 'https://x.com/WomenOfOS'
   instagram_url: 'https://instagram.com/WomenOfOpenSource'
   snapchat_url: ''
   youtube_url: ''
@@ -74,7 +74,7 @@ social_settings:
   soundcloud_url: ''
   spotify_url: ''
   bandcamp_url: ''
-  linkedin_url: 'https://linkedin.com/company/womenofopensource'
+  linkedin_url: 'https://www.linkedin.com/company/women-of-open-source/'
 
 color_settings:
   background_color: '#ffffff'

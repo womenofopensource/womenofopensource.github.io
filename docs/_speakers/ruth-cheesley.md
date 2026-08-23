@@ -20,7 +20,7 @@ profiles:
   sessionize: https://sessionize.com/silavapi
   linkedin: https://linkedin.com/in/ruthcheesley
   mastodon: https://mastodon.online/@rcheesley
-  twitter: https://twitter.com/rcheesley
+  x: https://x.com/rcheesley
   github: https://github.com/rcheesley
   website: https://ruthcheesley.co.uk
 talks:

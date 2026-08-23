@@ -4,7 +4,11 @@
 	{% assign platform = url[0] | remove: '_url' | replace: '-', ' ' | capitalize | replace: 'Github', 'GitHub' | replace: 'Linkedin', 'LinkedIn' | replace: 'Youtube', 'YouTube' %}
 	<li class="socials__item">
 		<a href="{{ url[1] }}" target="_blank" rel="noopener noreferrer" class="socials__item__link" aria-label="{{ platform }} (opens in new tab)">
+			{% if url[0] == 'x_url' %}
+			{% include x-icon.html %}
+			{% else %}
 			<i class="fab fa-{{ url[0] | replace: 'facebook', 'facebook-f' | remove: '_url' }}" aria-hidden="true"></i>
+			{% endif %}
 		</a>
 	</li>
 	{% endif %}

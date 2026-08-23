@@ -21,7 +21,7 @@ profiles:
   linkedin: https://linkedin.com/in/lornajane
   mastodon: https://indieweb.social/@lornajane
   bluesky: https://bsky.app/profile/lornajane.net
-  twitter: https://twitter.com/lornajane
+  x: https://x.com/lornajane
   github: https://github.com/lornajane
   website: https://lornajane.net
 talks:

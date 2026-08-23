@@ -21,7 +21,7 @@ profiles:
   sessionize: https://sessionize.com/peculiar
   linkedin: https://www.linkedin.com/in/peculiar-c-umeh/
   mastodon: https://mastodon.online/@peculiar
-  twitter: https://twitter.com/peculiarpec
+  x: https://x.com/peculiarpec
   github: https://github.com/peculiaruc
   website:
 talks:

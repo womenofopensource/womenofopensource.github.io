@@ -52,7 +52,7 @@ profiles:                                 # all optional — only those you add 
   linkedin: https://linkedin.com/in/ada
   mastodon: https://mastodon.social/@ada
   bluesky: https://bsky.app/profile/ada.example
-  twitter: https://twitter.com/ada
+  x: https://x.com/ada
   github: https://github.com/ada
   website: https://ada.example
 talks:                                    # optional — one entry per talk
@@ -82,7 +82,7 @@ page — a few short paragraphs about who you are and what you speak about.
 | `expertise` | Recommended | List of topics. Shown as tags (sidebar + card) and powers the **expertise filter**. |
 | `employer` | Optional | Shown on the hero (💼). Also searchable. Not shown on the card. |
 | `languages` | Optional | List. Shown in the sidebar "Languages" box (hidden if omitted). |
-| `profiles` | Optional | Social/profile links shown as icons on the hero. Supported keys: `sessionize`, `linkedin`, `mastodon`, `bluesky`, `twitter`, `github`, `website`. Only the ones you add are shown. |
+| `profiles` | Optional | Social/profile links shown as icons on the hero. Supported keys: `sessionize`, `linkedin`, `mastodon`, `bluesky`, `x`, `github`, `website`. Only the ones you add are shown. |
 | `talks` | Optional | List of talks in the "Speaking Topics" section. Each has `title`, `abstract`, and optional `delivered_at` (a list of events). |
 | `hero_image` | Optional | Banner image behind the hero. Falls back to a default community photo if omitted. |
 | *(body text)* | Recommended | Everything below the front matter is your **bio** (the "About" section), written in Markdown. |
