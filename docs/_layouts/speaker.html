@@ -56,9 +56,9 @@ layout: default
 					</svg>
 				</a>
 				{% endif %}
-				{% if page.profiles.twitter %}
-				<a href="{{ page.profiles.twitter }}" target="_blank" rel="noopener noreferrer" class="speaker-hero-profile-link" aria-label="Twitter/X">
-					<i class="fab fa-twitter" aria-hidden="true"></i>
+				{% if page.profiles.x %}
+				<a href="{{ page.profiles.x }}" target="_blank" rel="noopener noreferrer" class="speaker-hero-profile-link" aria-label="X">
+					{% include x-icon.html %}
 				</a>
 				{% endif %}
 				{% if page.profiles.github %}
