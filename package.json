@@ -18,7 +18,7 @@
     "http-server": "^14.1.1",
     "markdownlint-cli2": "^0.23.2",
     "postcss-scss": "^4.0.9",
-    "stylelint": "^16.10.0"
+    "stylelint": "^17.14.1"
   },
   "overrides": {
     "tmp": "^0.2.6",
