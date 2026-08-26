@@ -42,9 +42,10 @@ test('an external link still opens when the browser blocks window.open (as mobil
   const expectedHost = new URL(href).host;
 
   // Stub just the link's destination so the new tab resolves instantly and offline.
-  const hostPattern = new RegExp(`^https?://${expectedHost.replace(/[.]/g, '\\.')}(/|$)`);
-  await context.route(hostPattern, (route) =>
-    route.fulfill({ status: 200, contentType: 'text/html', body: '<!doctype html><title>stub</title>ok' })
+  // Match on the exact host via a predicate (no regex built from the URL).
+  await context.route(
+    (u) => u.host === expectedHost,
+    (route) => route.fulfill({ status: 200, contentType: 'text/html', body: '<!doctype html><title>stub</title>ok' })
   );
 
   const popupPromise = context.waitForEvent('page', { timeout: 7000 });
