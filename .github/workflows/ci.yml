@@ -12,6 +12,11 @@ concurrency:
   group: ci-${{ github.ref }}
   cancel-in-progress: true
 
+# Least-privilege default for GITHUB_TOKEN across all jobs (they only read the
+# repo and handle build artifacts; nothing needs write scopes).
+permissions:
+  contents: read
+
 jobs:
   build:
     name: Build + HTML proofer
