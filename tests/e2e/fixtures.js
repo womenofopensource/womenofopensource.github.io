@@ -13,12 +13,19 @@
 const base = require('@playwright/test');
 
 function isAllowed(url) {
+  if (url.startsWith('data:') || url.startsWith('blob:')) return true;
+  let hostname;
+  try {
+    hostname = new URL(url).hostname;
+  } catch {
+    return false;
+  }
+  // Match on the exact hostname (not a substring), so lookalikes such as
+  // ajax.googleapis.com.evil.com are not allowed through.
   return (
-    url.startsWith('http://127.0.0.1') ||
-    url.startsWith('http://localhost') ||
-    url.startsWith('data:') ||
-    url.startsWith('blob:') ||
-    url.includes('ajax.googleapis.com') // jQuery — required for the theme to run
+    hostname === '127.0.0.1' ||
+    hostname === 'localhost' ||
+    hostname === 'ajax.googleapis.com' // jQuery — required for the theme to run
   );
 }
 
