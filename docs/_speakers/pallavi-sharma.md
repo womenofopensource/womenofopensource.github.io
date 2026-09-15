@@ -30,7 +30,7 @@ talks:                                    # optional — one entry per talk
     abstract: " Part of Panel discussion for community from Selenium Project "
     delivered_at: "Selenium and Appium Conference 2025, Valencia, Spain"
 
-    - title: "Workshop on Nightwatch"
+  - title: "Workshop on Nightwatch"
     abstract: " Hands on workshop on nightwatch, a javascript open source tool based on webdriver "
     delivered_at: "Global Testing Retreat Conference 2024 by Agile Testing Alliance"
 
