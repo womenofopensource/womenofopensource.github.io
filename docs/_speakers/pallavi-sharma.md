@@ -26,7 +26,7 @@ talks:                                    # optional — one entry per talk
     This talk explored how one can contribute to building of Selenium to benefit community. "
     delivered_at: "Selenium and Appium Conference 2025, Valencia, Spain"
 
- - title: "Project Member Panel"
+  - title: "Project Member Panel"
     abstract: " Part of Panel discussion for community from Selenium Project "
     delivered_at: "Selenium and Appium Conference 2025, Valencia, Spain"
 
