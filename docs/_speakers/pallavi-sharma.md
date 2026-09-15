@@ -1,7 +1,6 @@
 ---
 title: Pallavi Sharma                       # browser tab / SEO title (usually same as name)
 name: Pallavi Sharma                        # display name
-pronouns:                          # optional (e.g. she/her, they/them, he/him)
 slug: pallavi-sharma                        # URL: /speakers/pallavi-sharma
 tagline: "To see the runes in the ruins... to breathe in the between of let it be and let it go is a life I live | तत् त्वम् असि | ਸਬਰ ਸ਼ੁਕਰ | '#BeKind'"
 description: Founder 5 Elements Learning and Mosaic Words | Published Author | Committer at Selenium Project
@@ -35,10 +34,14 @@ talks:                                    # optional — one entry per talk
     abstract: " Hands on workshop on nightwatch, a javascript open source tool based on webdriver "
     delivered_at: "Global Testing Retreat Conference 2024 by Agile Testing Alliance"
 
-   hero_image: '/images/speakers/Speaker-Card-1-pallavi.jpeg' # optional banner; falls back to a default photo
+   hero_image: '/images/speakers/pallavi-sharma.jpg' # optional banner; falls back to a default photo
 ---
 I am a multifaceted professional with extensive experience across technology, education, and leadership spanning two decades. Throughout my career, I have contributed in diverse capacities including individual contributor, technical product manager, scrum master, intellectual property rights coordinator, and coach specializing in open-source test automation tools and programming.
+
 As the Founder of 5 Elements Learning, an e-learning organization, and Mosaic Words, a green literature publishing company, I combine entrepreneurship with technical expertise. I have authored five technical books and two works of fiction.
 I contribute to FOSS and open-source projects, serving as a Selenium committer.
+
 I actively participate in the global testing and automation community, contributing to international conferences on Testing, Automation, AI, and related fields as a reviewer, jury member, organizer, and speaker. I hold multiple certifications aligned with my professional expertise and personal interests.
+
 Beyond my professional endeavors, I enjoy writing, reading, travel, nature watching, and conservation initiatives. I am committed to contributing positively to society and the environment through both my expertise and resources, guided by the principle of '#BeKind', beginning with self-compassion
+
