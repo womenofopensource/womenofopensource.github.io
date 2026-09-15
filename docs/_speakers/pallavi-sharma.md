@@ -34,7 +34,7 @@ talks:                                    # optional — one entry per talk
     abstract: " Hands on workshop on nightwatch, a javascript open source tool based on webdriver "
     delivered_at: "Global Testing Retreat Conference 2024 by Agile Testing Alliance"
 
-   hero_image: '/images/speakers/pallavi-sharma.jpg' # optional banner; falls back to a default photo
+hero_image: '/images/speakers/pallavi-sharma.jpg' # optional banner; falls back to a default photo
 ---
 I am a multifaceted professional with extensive experience across technology, education, and leadership spanning two decades. Throughout my career, I have contributed in diverse capacities including individual contributor, technical product manager, scrum master, intellectual property rights coordinator, and coach specializing in open-source test automation tools and programming.
 
