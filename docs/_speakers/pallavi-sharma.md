@@ -22,10 +22,20 @@ profiles:                                 # all optional — only those you add 
   github: https://github.com/rpallavisharma
   website: https://linktr.ee/rpallavisharma
 talks:                                    # optional — one entry per talk
-  - title: "Multiple talks in various conferences and meetups"
-    abstract: " Multiple talks in various conferences and meetups "
-    delivered_at: "https://5elementslearning.dev/conf.php"
-hero_image: '/images/speakers/pallavi-sharma.jpg' # optional banner; falls back to a default photo
+  - title: "Begin your journey to be a Selenium Committer"
+    abstract: " Selenium is a popular and two decade old open source project which helps in browser automation.
+    This talk explored how one can contribute to building of Selenium to benefit community. "
+    delivered_at: "Selenium and Appium Conference 2025, Valencia, Spain"
+
+ - title: "Project Member Panel"
+    abstract: " Part of Panel discussion for community from Selenium Project "
+    delivered_at: "Selenium and Appium Conference 2025, Valencia, Spain"
+
+    - title: "Workshop on Nightwatch"
+    abstract: " Hands on workshop on nightwatch, a javascript open source tool based on webdriver "
+    delivered_at: "Global Testing Retreat Conference 2024 by Agile Testing Alliance"
+
+   hero_image: '/images/speakers/Speaker-Card-1-pallavi.jpeg' # optional banner; falls back to a default photo
 ---
 I am a multifaceted professional with extensive experience across technology, education, and leadership spanning two decades. Throughout my career, I have contributed in diverse capacities including individual contributor, technical product manager, scrum master, intellectual property rights coordinator, and coach specializing in open-source test automation tools and programming.
 As the Founder of 5 Elements Learning, an e-learning organization, and Mosaic Words, a green literature publishing company, I combine entrepreneurship with technical expertise. I have authored five technical books and two works of fiction.
