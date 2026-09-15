@@ -13,12 +13,12 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@lhci/cli": "^0.15.1",
-    "@playwright/test": "^1.48.0",
-    "eslint": "^10.9.1",
+    "@playwright/test": "^1.63.0",
+    "eslint": "^10.10.0",
     "http-server": "^14.1.1",
     "markdownlint-cli2": "^0.23.2",
     "postcss-scss": "^4.0.9",
-    "stylelint": "^17.14.1"
+    "stylelint": "^17.15.0"
   },
   "overrides": {
     "tmp": "^0.2.6",
