@@ -29,7 +29,7 @@ talks:
   - title: "Project Member Panel"
     abstract: " Part of Panel discussion for community from Selenium Project "
     delivered_at:
-    Selenium and Appium Conference 2025, Valencia, Spain
+      - Selenium and Appium Conference 2025, Valencia, Spain
   - title: "Workshop on Nightwatch"
     abstract: "Hands on workshop on nightwatch, a javascript open source tool based on webdriver"
     delivered_at:
