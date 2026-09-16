@@ -26,10 +26,12 @@ talks:
     This talk explored how one can contribute to building of Selenium to benefit community. "
     delivered_at:
       - Selenium and Appium Conference 2025, Valencia, Spain
+      - Selenium and Appium Conference 2024, Online, India
   - title: "Project Member Panel"
     abstract: " Part of Panel discussion for community from Selenium Project "
     delivered_at:
       - Selenium and Appium Conference 2025, Valencia, Spain
+      - Selenium and Appium Conference 2024, Online, India
   - title: "Workshop on Nightwatch"
     abstract: "Hands on workshop on nightwatch, a javascript open source tool based on webdriver"
     delivered_at:
@@ -43,5 +45,4 @@ I contribute to FOSS and open-source projects, serving as a Selenium committer.
 
 I actively participate in the global testing and automation community, contributing to international conferences on Testing, Automation, AI, and related fields as a reviewer, jury member, organizer, and speaker. I hold multiple certifications aligned with my professional expertise and personal interests.
 
-Beyond my professional endeavors, I enjoy writing, reading, travel, nature watching, and conservation initiatives. I am committed to contributing positively to society and the environment through both my expertise and resources, guided by the principle of '#BeKind', beginning with self-compassion
-
+Beyond my professional endeavors, I enjoy writing, reading, travel, nature watching, and conservation initiatives. I am committed to contributing positively to society and the environment through both my expertise and resources, guided by the principle of '#BeKind', beginning with self-compassion.
