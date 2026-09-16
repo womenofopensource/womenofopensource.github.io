@@ -33,7 +33,7 @@ talks:
   - title: "Workshop on Nightwatch"
     abstract: "Hands on workshop on nightwatch, a javascript open source tool based on webdriver"
     delivered_at:
-    Global Testing Retreat Conference 2024 by Agile Testing Alliance
+      - Global Testing Retreat Conference 2024 by Agile Testing Alliance
 
 ---
 I am a multifaceted professional with extensive experience across technology, education, and leadership spanning two decades. Throughout my career, I have contributed in diverse capacities including individual contributor, technical product manager, scrum master, intellectual property rights coordinator, and coach specializing in open-source test automation tools and programming.
