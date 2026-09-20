@@ -28,7 +28,7 @@ talks:
       - Selenium and Appium Conference 2025, Valencia, Spain
       - Selenium and Appium Conference 2024, Online, India
   - title: "Project Member Panel"
-    abstract: " Part of Panel discussion for community from Selenium Project "
+    abstract: "Part of a panel discussion for the community, from the Selenium Project."
     delivered_at:
       - Selenium and Appium Conference 2025, Valencia, Spain
       - Selenium and Appium Conference 2024, Online, India
