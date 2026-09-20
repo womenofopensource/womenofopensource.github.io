@@ -33,7 +33,7 @@ talks:
       - Selenium and Appium Conference 2025, Valencia, Spain
       - Selenium and Appium Conference 2024, Online, India
   - title: "Workshop on Nightwatch"
-    abstract: "Hands on workshop on nightwatch, a javascript open source tool based on webdriver"
+    abstract: "A hands-on workshop on Nightwatch, a JavaScript open source tool based on WebDriver."
     delivered_at:
       - Global Testing Retreat Conference 2024 by Agile Testing Alliance
 
