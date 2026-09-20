@@ -22,8 +22,7 @@ profiles:                                 # all optional — only those you add 
   website: https://linktr.ee/rpallavisharma
 talks:                                    
   - title: "Begin your journey to be a Selenium Committer"
-    abstract: " Selenium is a popular and two decade old open source project which helps in browser automation.
-    This talk explored how one can contribute to building of Selenium to benefit community. "
+    abstract: "Selenium is a popular, two-decade-old open source project that helps with browser automation. This talk explored how you can contribute to building Selenium to benefit the community."
     delivered_at:
       - Selenium and Appium Conference 2025, Valencia, Spain
       - Selenium and Appium Conference 2024, Online, India
