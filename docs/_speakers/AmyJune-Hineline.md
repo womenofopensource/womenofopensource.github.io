@@ -41,4 +41,4 @@ Her ongoing experience as a hospice nurse keeps her in touch with many end-users
 
 She helps communities discover how they can contribute and belong in more ways than code. Also known for her superpower: making any meeting 20% more awkward just by showing up.
 
-You can see all of her past talks on her [Speaker Profile page](https://gitlab.com/volkswagenchick/AmyJuneH/-/blob/master/Presentations.md). 
+You can see all of her past talks on her [Speaker Profile page](https://gitlab.com/volkswagenchick/AmyJuneH/-/blob/master/Presentations.md).
