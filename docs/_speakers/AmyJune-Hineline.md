@@ -24,9 +24,9 @@ profiles:                                 # all optional — only those you add 
   bluesky: https://bsky.app/profile/volkswagenchick.bsky.social
 
 talks:                                    # optional — one entry per talk
-  - title: Scrolling Without Barriers: Practical Accessibility Tips for Social Media
+  - title: "Scrolling Without Barriers: Practical Accessibility Tips for Social Media"
 
-    abstract: [Read the slides](Read the abstract here.](https://www.accessibilityassociation.org/webinar/a16IV00000BL2GcYAL/wbn0287))."
+    abstract: "[Read the abstract](https://www.accessibilityassociation.org/webinar/a16IV00000BL2GcYAL/wbn0287)."
     delivered_at:
       - IAAP - Professional Education Webinar Series
 
