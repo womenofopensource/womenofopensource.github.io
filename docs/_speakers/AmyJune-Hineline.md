@@ -4,8 +4,8 @@ name: AmyJune Hineline                        # display name
 pronouns: she/her                         # optional (e.g. she/her, they/them, he/him)
 slug: amyjune-hineline                        # URL: /speakers/ada-lovelace
 tagline: Global Skills Community Architect
-description: AmyJune speaks about open source, accessibility, git, mentoring, and community management. She also delivers training sessions on contributing to open source, technical writing, and s
-# featured_image: '/images/speakers/ada-lovelace.jpg'
+description: AmyJune speaks about open source, accessibility, git, mentoring, and community management. She also delivers training sessions on contributing to open source, technical writing, and speaker resources.
+featured_image: '/images/speakers/amyjune-hineline.jpg'
 location: San Francisco Bay Area, United States                 # country (used for the country filter)
 employer: The Linux Foundation          # optional
 languages:                                # optional
