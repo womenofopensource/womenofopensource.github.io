@@ -6,11 +6,10 @@ slug: amyjune-hineline                        # URL: /speakers/ada-lovelace
 tagline: Global Skills Community Architect
 description: AmyJune speaks about open source, accessibility, git, mentoring, and community management. She also delivers training sessions on contributing to open source, technical writing, and speaker resources.
 featured_image: '/images/speakers/amyjune-hineline.jpg'
-location: San Francisco Bay Area, United States                 # country (used for the country filter)
+location: United States                 # country (used for the country filter)
 employer: The Linux Foundation          # optional
 languages:                                # optional
   - English
-  - Sarcasm
 expertise:                                # topics (used for the expertise filter)
   - Open Source Best Practices
   - Open Source Community Management
