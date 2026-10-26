@@ -56,7 +56,7 @@ talks:
       - Berlin Buzzwords 2023
       - Haystack on Tour, Kraków 2023 (as "Vectorize your E-commerce Search")
   - title: "Women of Search"
-    abstract: "Sessions from the Women of Search community at Haystack, putting women's voices and work in search on the main stage. [Watch 2023](https://www.youtube.com/watch?v=S19SkbYu5Qc) | [Watch 2022](https://www.youtube.com/watch?v=lX2FZ9BAwuM)"
+    abstract: "Sessions from the Women of Search community at Haystack, putting women's voices and work in search on the main stage. [Watch 2023](https://www.youtube.com/watch?v=S19SkbYu5Qc) · [Watch 2022](https://www.youtube.com/watch?v=lX2FZ9BAwuM)"
     delivered_at:
       - Haystack EU 2023 (with Paige Tyrrell and Istvan Simon)
       - Haystack EU 2022
