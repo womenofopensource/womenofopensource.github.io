@@ -10,7 +10,7 @@ Women of Open Source is run by volunteers, and we keep the community free to joi
 
 We use **Open Collective** to accept and manage contributions. It is fully transparent, so you can see exactly what comes in and where every penny goes.
 
-<a class="button button--large" href="{{ site.data.settings.support_settings.open_collective_url }}" target="_blank" rel="noopener noreferrer">Support us on Open Collective</a>
+[Support us on Open Collective]({{ site.data.settings.support_settings.open_collective_url }}){:.button .button--large target="_blank" rel="noopener noreferrer"}
 
 ## Where your contribution goes
 

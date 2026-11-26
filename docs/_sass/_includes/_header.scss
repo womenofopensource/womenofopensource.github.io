@@ -79,7 +79,7 @@
 
 .menu {
 	
-	@include mq(tabletl) {
+	@include mq(laptop) {
 		position: absolute;
 		top: 50%;
 		right: 20px;
@@ -106,7 +106,7 @@
 		right: 0;
 	}
 	
-	@include mq(tabletl) {
+	@include mq(laptop) {
 		display: none;
 	}
 
@@ -181,7 +181,7 @@
 	opacity: 0;
 	@include transition(all 0.2s ease-in-out);
 
-	@include mq(tabletl) {
+	@include mq(laptop) {
 		position: relative;
 		background: transparent;
 		visibility: visible;
@@ -206,7 +206,7 @@
 		max-width: 70%;
 	}
 
-	@include mq(tabletl) {
+	@include mq(laptop) {
 		max-width: none;
 		margin: 0;
 		padding: 0;
@@ -215,7 +215,7 @@
 
 .menu__list__item {
 
-	@include mq(tabletl) {
+	@include mq(laptop) {
 		display: inline-block;
 		margin-left: 20px;
 
@@ -235,7 +235,7 @@
 		color: $accent-color;
 	}
 
-	@include mq(tabletl) {
+	@include mq(laptop) {
 		display: block;
 		padding: 0 0 8px;
 		font-size: $menu-medium;
@@ -260,7 +260,7 @@
 	padding: 15px 20px 16px;
 	font-size: 13px;
 
-	@include mq(tabletl) {
+	@include mq(laptop) {
 		margin-top: 0;
 		padding: 11px 20px 12px;
 		font-size: 15px;
@@ -272,7 +272,7 @@
 	.menu__button {
 		border-radius: 24px;
 
-		@include mq(tabletl) {
+		@include mq(laptop) {
 			border-radius: 21px;
 		}
 	}
